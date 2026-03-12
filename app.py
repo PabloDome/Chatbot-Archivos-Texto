@@ -57,7 +57,6 @@ def procesar_pdf(pdf_file):
 
 # 2. Lógica principal de la aplicación
 if api_key:
-    # Intentar cargar el archivo automáticamente desde la raíz del repositorio
     nombre_archivo = "tesis_mauricio.pdf"
     
     if "retriever" not in st.session_state:
@@ -77,4 +76,27 @@ if api_key:
         if pregunta:
             try:
                 # Inicialización del modelo Gemini para generar la respuesta
-                llm = ChatGoogleGenerativeAI
+                llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
+                
+                template = """Respondé la pregunta basándote solo en el siguiente contexto técnico de la tesis:
+                {context}
+                
+                Pregunta: {question}
+                """
+                prompt = ChatPromptTemplate.from_template(template)
+
+                # Cadena de procesamiento (LCEL)
+                chain = (
+                    {"context": st.session_state.retriever, "question": RunnablePassthrough()}
+                    | prompt 
+                    | llm 
+                    | StrOutputParser()
+                )
+                
+                with st.spinner("Buscando en la tesis..."):
+                    respuesta = chain.invoke(pregunta)
+                    st.info(respuesta)
+            except Exception as e:
+                st.error(f"Error en la consulta: {str(e)}")
+else:
+    st.error("Falta la configuración de GOOGLE_API_KEY en los Secrets de Streamlit.")
