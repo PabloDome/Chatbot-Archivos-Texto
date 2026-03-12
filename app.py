@@ -14,11 +14,11 @@ st.set_page_config(page_title="Asistente de Tesis - M. E. Romano", page_icon="�
 st.title("🔬 Asistente Virtual: Tesis de Mauricio Romano")
 st.markdown("Consultá detalles técnicos sobre el microscopio y el efecto Kerr.")
 
-# Obtención de la API Key desde Secrets
+# Obtención de la API Key desde Secrets de Streamlit
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
 def procesar_documento():
-    # Buscamos específicamente el archivo confirmado
+    # Nombre exacto del archivo en tu repositorio de GitHub
     nombre_archivo = "tesis_mauricio.pdf"
     
     if not os.path.exists(nombre_archivo):
@@ -33,23 +33,27 @@ def procesar_documento():
             if content:
                 text += content
         
+        # División del texto en fragmentos para la base de datos vectorial
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=250)
         chunks = text_splitter.split_text(text)
         
-        # Usamos el modelo estable embedding-001
+        # Configuración estable de Embeddings (Modelo 001 es el más compatible regionalmente)
         embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/embedding-001", 
-    google_api_key=api_key,
-    client_options={"api_version": "v1"} # Esto fuerza la versión estable
-)
+            model="models/embedding-001",
+            google_api_key=api_key
+        )
+        
         vectorstore = FAISS.from_texts(chunks, embeddings)
         return vectorstore.as_retriever(search_kwargs={"k": 5})
+    
     except Exception as e:
+        # Si ves un error 404 aquí, revisá que la API Key tenga habilitada la 'Generative Language API'
         st.error(f"Error al procesar el documento: {str(e)}")
         return None
 
 # 2. Lógica del Chatbot
 if api_key:
+    # Evitamos procesar el PDF cada vez que el usuario hace una pregunta
     if "retriever" not in st.session_state:
         with st.spinner("Analizando la tesis..."):
             st.session_state.retriever = procesar_documento()
@@ -57,11 +61,11 @@ if api_key:
     retriever = st.session_state.retriever
     
     if retriever:
-        pregunta = st.text_input("Hacé tu pregunta técnica:")
+        pregunta = st.text_input("Hacé tu pregunta técnica (ej. sobre el microscopio o simulaciones):")
         
         if pregunta:
             try:
-                # Se agregó la importación correcta de ChatGoogleGenerativeAI
+                # Inicialización del modelo Gemini para generar la respuesta
                 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
                 
                 template = """Respondé la pregunta basándote solo en el siguiente contexto técnico de la tesis:
@@ -71,6 +75,7 @@ if api_key:
                 """
                 prompt = ChatPromptTemplate.from_template(template)
 
+                # Cadena de procesamiento (LCEL)
                 chain = (
                     {"context": retriever, "question": RunnablePassthrough()}
                     | prompt
@@ -84,4 +89,4 @@ if api_key:
             except Exception as e:
                 st.error(f"Error en la consulta: {str(e)}")
 else:
-    st.error("Falta GOOGLE_API_KEY en Secrets de Streamlit.")
+    st.error("Falta la configuración de GOOGLE_API_KEY en los Secrets de Streamlit.")
