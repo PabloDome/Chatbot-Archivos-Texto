@@ -22,34 +22,35 @@ def procesar_documento():
     nombre_archivo = "tesis_mauricio.pdf"
     
     if not os.path.exists(nombre_archivo):
-        st.error(f"Error: No se encontró '{nombre_archivo}' en GitHub.")
+        st.error(f"Error: Asegurate de que '{nombre_archivo}' esté en GitHub.")
         return None
     
     try:
-        # 1. Leer el PDF
+        # 1. Lectura del PDF
         pdf_reader = PyPDF2.PdfReader(nombre_archivo)
         text = "".join([page.extract_text() or "" for page in pdf_reader.pages])
         
-        # 2. Dividir en fragmentos
+        # 2. Fragmentación del texto
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         chunks = text_splitter.split_text(text)
         
-        # 3. Configurar Google Generative AI directamente
+        # 3. Configuración del SDK oficial de Google (evita errores de LangChain)
         genai.configure(api_key=api_key)
         
-        # Clase personalizada para conectar Google SDK con FAISS
         class GoogleCustomEmbeddings:
             def embed_documents(self, texts):
+                # Forzamos la tarea de 'retrieval_document'
                 return [genai.embed_content(model="models/embedding-001", content=t, task_type="retrieval_document")["embedding"] for t in texts]
             def embed_query(self, text):
+                # Forzamos la tarea de 'retrieval_query'
                 return genai.embed_content(model="models/embedding-001", content=text, task_type="retrieval_query")["embedding"]
 
-        # 4. Crear el almacén vectorial
+        # 4. Creación del almacén vectorial con FAISS
         vectorstore = FAISS.from_texts(chunks, GoogleCustomEmbeddings())
         return vectorstore.as_retriever(search_kwargs={"k": 5})
     
     except Exception as e:
-        st.error(f"Error crítico: {str(e)}")
+        st.error(f"Error crítico en el procesamiento: {str(e)}")
         return None
 
 # 2. Lógica del Chatbot
