@@ -22,23 +22,32 @@ def procesar_pdf(pdf_file):
         text = "".join([page.extract_text() or "" for page in pdf_reader.pages])
         chunks = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200).split_text(text)
         
-        # Configuración manual de Google Generative AI
+        # CONFIGURACIÓN DE TRANSPORTE: Forzamos el uso de la API estable
         genai.configure(api_key=api_key)
         
-        # Esta clase fuerza el uso de la función nativa que no da error 404
-        class GoogleDirectEmbeddings:
+        class GoogleStableEmbeddings:
             def embed_documents(self, texts):
-                # Llamada directa al motor de Google
-                return [genai.embed_content(model="models/embedding-001", content=t, task_type="retrieval_document")["embedding"] for t in texts]
+                # Usamos el modelo 004 con la configuración de tarea específica
+                return [genai.embed_content(
+                    model="models/text-embedding-004", 
+                    content=t, 
+                    task_type="retrieval_document"
+                )["embedding"] for t in texts]
+                
             def embed_query(self, text):
-                return genai.embed_content(model="models/embedding-001", content=text, task_type="retrieval_query")["embedding"]
+                return genai.embed_content(
+                    model="models/text-embedding-004", 
+                    content=text, 
+                    task_type="retrieval_query"
+                )["embedding"]
 
-        # Creamos el almacén de datos
-        vectorstore = FAISS.from_texts(chunks, GoogleDirectEmbeddings())
+        # Creamos el almacén vectorial
+        vectorstore = FAISS.from_texts(chunks, GoogleStableEmbeddings())
         return vectorstore.as_retriever(search_kwargs={"k": 5})
     
     except Exception as e:
-        st.error(f"Error crítico de API: {str(e)}")
+        # Si falla, imprimimos el error exacto para diagnosticar
+        st.error(f"Error detallado de la API: {str(e)}")
         return None
 
 # 2. Lógica de ejecución
@@ -47,23 +56,24 @@ if api_key:
     
     if "retriever" not in st.session_state:
         if os.path.exists(nombre_archivo):
-            with st.spinner("Conectando con Google API..."):
+            with st.spinner("Procesando tesis con Google API v1..."):
                 st.session_state.retriever = procesar_pdf(nombre_archivo)
         else:
-            st.warning("No se encontró el archivo en GitHub.")
+            st.warning("⚠️ No se encontró el PDF en GitHub.")
             u_file = st.file_uploader("Subir PDF manualmente", type="pdf")
             if u_file:
                 st.session_state.retriever = procesar_pdf(u_file)
 
     if "retriever" in st.session_state and st.session_state.retriever:
-        pregunta = st.text_input("Hacé tu pregunta técnica:")
+        pregunta = st.text_input("Consultá detalles sobre el microscopio o simulaciones:")
         if pregunta:
             try:
+                # Inicialización del chat usando Gemini 1.5 Flash
                 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
-                prompt = ChatPromptTemplate.from_template("Responde según la tesis: {context}\n\nPregunta: {question}")
+                prompt = ChatPromptTemplate.from_template("Responde basándote en la tesis: {context}\n\nPregunta: {question}")
                 chain = ({"context": st.session_state.retriever, "question": RunnablePassthrough()} | prompt | llm | StrOutputParser())
                 st.info(chain.invoke(pregunta))
             except Exception as e:
-                st.error(f"Error en la respuesta: {str(e)}")
+                st.error(f"Error en Gemini: {str(e)}")
 else:
-    st.error("Falta la API Key en Secrets.")
+    st.error("Falta la API Key en los Secrets de Streamlit.")
