@@ -54,24 +54,26 @@ if api_key:
             with st.spinner("Cargando tesis..."):
                 st.session_state.retriever = procesar_texto(archivo_txt)
         else:
-            st.error("Falta tesis_mauricio.txt")
+            st.error("Falta tesis_mauricio.txt en el repositorio.")
 
     if st.session_state.get("retriever"):
         pregunta = st.text_input("Consultá sobre el microscopio o la dinámica de paredes:")
         if pregunta:
             try:
-                # Búsqueda de fragmentos relevantes
+                # Recuperamos fragmentos relevantes del archivo de Mauricio
                 docs = st.session_state.retriever.get_relevant_documents(pregunta)
                 contexto = "\n\n".join([doc.page_content for doc in docs])
                 
-                # LLAMADA DIRECTA A GEMINI (Evita el error 404 de LangChain)
+                # LLAMADA DIRECTA A GEMINI (Forzamos la conexión que sí funciona)
                 genai.configure(api_key=api_key)
                 model = genai.GenerativeModel('gemini-1.5-flash')
                 
-                prompt = f"""Responde como un experto en física experimental basándote solo en este contexto:
+                prompt = f"""Responde como un experto en física experimental basándote SOLO en este contexto de la tesis:
                 {contexto}
                 
-                Pregunta: {pregunta}"""
+                Pregunta: {pregunta}
+                
+                Respuesta técnica:"""
                 
                 with st.spinner("Generando respuesta técnica..."):
                     response = model.generate_content(prompt)
@@ -79,4 +81,4 @@ if api_key:
             except Exception as e:
                 st.error(f"Error en la comunicación directa: {str(e)}")
 else:
-    st.error("Configurá la GOOGLE_API_KEY.")
+    st.error("Configurá la GOOGLE_API_KEY en los Secrets.")
