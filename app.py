@@ -6,6 +6,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+import os
 
 # 1. Configuración de la interfaz
 st.set_page_config(page_title="Asistente de Tesis - M. E. Romano", page_icon="🔬")
@@ -16,7 +17,16 @@ st.markdown("Consultá detalles técnicos sobre el microscopio y el efecto Kerr.
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
 def procesar_documento():
-    nombre_archivo = "tesis_mauricio.pdf"
+    # Buscamos cualquier archivo que termine en .pdf en la carpeta
+    archivos_pdf = [f for f in os.listdir('.') if f.endswith('.pdf')]
+    
+    if not archivos_pdf:
+        st.error("Error: No se encontró ningún archivo PDF en el repositorio de GitHub.")
+        return None
+    
+    # Tomamos el primero que encuentre (por ejemplo: 'tesis-romano (1).pdf')
+    nombre_archivo = archivos_pdf[0]
+    
     try:
         pdf_reader = PyPDF2.PdfReader(nombre_archivo)
         text = ""
@@ -30,7 +40,7 @@ def procesar_documento():
         vectorstore = FAISS.from_texts(chunks, embeddings)
         return vectorstore.as_retriever(search_kwargs={"k": 5})
     except Exception as e:
-        st.error(f"Error: Aseguráte de que '{nombre_archivo}' esté en GitHub.")
+        st.error(f"Error al procesar {nombre_archivo}: {str(e)}")
         return None
 
 # 2. Lógica del Chatbot (Versión 2026 estable)
