@@ -1,0 +1,8 @@
+Plaintext
+streamlit
+PyPDF2
+langchain
+langchain-community
+langchain-openai
+faiss-cpu
+tiktoken
