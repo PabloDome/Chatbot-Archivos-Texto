@@ -58,8 +58,8 @@ as, se midi´ o la inductanciaLde la bobina para caracterizar su
 comportamiento y determinar su tiempo de respuesta. Finalmente, se
 valid´ o el funcionamiento del equipo estudiando la respuesta magn´
 etica de las pel´ ıculas bajo el r´ egimen decreep, utilizando los par´
-ametros determinados en trabajos previos para dicho r´ egimen. Palabras
-clave:EFECTO KERR, MICROSCOP ´IA MAGNETO- ´OPTICA, DOMI- NIOS
+ametros determinados en trabajos previos para dicho r´ egimen. [
+Palabras clave:EFECTO KERR, MICROSCOP ´IA MAGNETO- ´OPTICA, DOMI- ] NIOS
 MAGN´ETICOS, PEL´ICULAS ULTRADELGADAS, ANISOTROP´IA PERPEN- DICULAR.
 
 ´Indice de contenidos Resumen v ´Indice de contenidos vii ´Indice de s´
@@ -101,23 +101,24 @@ Bibliograf´ ıa 51
 ´Indice de s´ ımbolos APP: Anisotrop´ ıa Perpendicular al Plano CAB:
 Centro At´ omico Bariloche CMOS: Semiconductor de ´ oxido met´ alico
 complementario (tipo de sensor de c´ amara) GOL: Grupo de ´Optica L´
-aser MFM: Microscop´ ıa de Fuerza Magn´ etica
-(Magnetic-Force-Microscopy) MO: Magneto-´ optico MOSFET: Transistor de
-efecto de campo de metal-´ oxido-semiconductor PDM: Pared de Dominio
-Magn´ etico PMOKE: Efecto Kerr Polar Magneto- ´Optico (Polar
-Magneto-Optical Kerr Effect) SEM: Microscop´ ıa Electr´ onica de Barrido
-(Scanning Electron Microscope) SQUID: Dispositivo de Interferencia Cu´
-antica Superconductora TEM: Microscop´ ıa Electr´ onica de Transmisi´ on
-(usado para la grilla de calibraci´ on) a0: Radio interno de la bobina
-Aex: Constante de intercambio C: Contraste magneto-´ optico ∆I:
-Diferencia entreI T eI 0 ee,ext: Densidad de energ´ ıa el´ astica de
-origen no magn´ etico eme: Densidad de energ´ ıa magneto-el´ astica Ean:
-Energ´ ıa anisotr´ opica Edip: Energ´ ıa dipolar Ee: Energ´ ıa el´
-astica Eex: Energ´ ıa de intercambio ET : Energ´ ıa magn´ etica libre
-total EZee: Energ´ ıa Zeeman G: Ganancia de la c´ amara H: Amplitud de
-campo magn´ etico H: Vector campo magn´ etico Hb: Campo magn´ etico en
-el borde de la muestra Hc: Campo magn´ etico en el centro de la muestra
-(ejezde la bobina) HCoer : Campo magn´ etico coercitivo ix
+aser [ MFM: Microscop´ ıa de Fuerza Magn´ etica
+(Magnetic-Force-Microscopy) ] MO: Magneto-´ optico [ MOSFET: Transistor
+de efecto de campo de metal-´ oxido-semiconductor ] PDM: Pared de
+Dominio Magn´ etico [ PMOKE: Efecto Kerr Polar Magneto- ´Optico (Polar
+Magneto-Optical Kerr Effect) ] SEM: Microscop´ ıa Electr´ onica de
+Barrido (Scanning Electron Microscope) SQUID: Dispositivo de
+Interferencia Cu´ antica Superconductora TEM: Microscop´ ıa Electr´
+onica de Transmisi´ on (usado para la grilla de calibraci´ on) a0: Radio
+interno de la bobina Aex: Constante de intercambio C: Contraste
+magneto-´ optico ∆I: Diferencia entreI T eI 0 ee,ext: Densidad de energ´
+ıa el´ astica de origen no magn´ etico eme: Densidad de energ´ ıa
+magneto-el´ astica Ean: Energ´ ıa anisotr´ opica Edip: Energ´ ıa dipolar
+Ee: Energ´ ıa el´ astica Eex: Energ´ ıa de intercambio ET : Energ´ ıa
+magn´ etica libre total EZee: Energ´ ıa Zeeman G: Ganancia de la c´
+amara H: Amplitud de campo magn´ etico H: Vector campo magn´ etico Hb:
+Campo magn´ etico en el borde de la muestra Hc: Campo magn´ etico en el
+centro de la muestra (ejezde la bobina) HCoer : Campo magn´ etico
+coercitivo ix
 
 x ´Indice de s ´ ımbolos Hd: Campo de depinning Hdip: Campo magn´ etico
 dipolar Hk: Campo de anisotrop´ ıa efectiva HS: Campo magn´ etico de
@@ -159,14 +160,14 @@ ferromagn´ etica . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
 1.3. Ciclos de histeresis de una pelicula delgada con un capa de Co en
 el eje perpendicular al plano (a) y el eje contenido en el plano (b) . .
 . . . . 8 1.4. Imagenes de patrones de dominios magneticos tomadas con
-MO. (a)- Dominios rectangulares. (b)- Dominios tipo burbuja. (c)-
-Dominios tipo dientes de sierra. . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . 9 1.5. Rotaci´ on de la magnetizaci´ on en paredes
+MO. (a)- [ Dominios rectangulares. (b)- Dominios tipo burbuja. (c)-
+Dominios tipo ] dientes de sierra. . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . 9 1.5. Rotaci´ on de la magnetizaci´ on en paredes
 de Bloch (a) y en paredes de N´ eel (b). . . . . . . . . . . . . . . . .
 . . . . . . . . . . . . . . . . . . . 10 1.6. Esquemas de las distintas
 geometr´ ıas en las que se observa el fen´ omeno de rotaci´ on del plano
-de polarizaci´ on un haz de luz polarizada al interac- tuar con un
-sistema magn´ etico. (a)- Efectos longitudinales. (b- Efectos
+de polarizaci´ on un haz de luz polarizada al interac- [ tuar con un
+sistema magn´ etico. (a)- Efectos longitudinales. (b- Efectos ]
 transversales) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 . . . 11 1.7. Esquema de la respuesta de la velocidad de la pared de
 dominio en funci´ on de la intensidad del campo externo, con los tres
@@ -174,124 +175,126 @@ reg´ ımenes aT > 0:creep, donde el movimiento de la pared est´ a
 asistido por fluctuaciones t´ ermicas,depinning, dondeH∼H d, yflow,
 donde la fuerza externa domina y la velocidad es lineal conH. . . . . .
 . . . . . . . . . . . . . 13 1.8. Ejemplos de curvas de velocidad en
-funci´ on del campo en pel´ ıculas del- gas de Pt/Co/Pt (a), y una
-ampliaci´ on del r´ egimen decreepen escala logar´ ıtmica (b). . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . . . . 14 2.1. Esquema de
+funci´ on del campo en pel´ ıculas del- [ gas de Pt/Co/Pt (a), y una
+ampliaci´ on del r´ egimen decreepen escala ] logar´ ıtmica (b). . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 14 2.1. Esquema de
 las pel´ ıculas ultradelgadas con sus composiciones y espeso- res entre
 par´ entesis. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 16 xiii
 
 xiv ´Indice de figuras 2.2. Esquema del microscopio de efecto Kerr polar
-(PMOKE) construido. LED, L1 - Lente colimadora de foco 11 cm, P -
-Polarizador, L2 - Lente condensadora de foco 30 cm, I - Iris, BM -
-divisor de haz (beam splitter), Ob - lente objetivo, S - muestra, A -
-analizador, Cam - c´ amara. Inset: imagen t´ ıpica de un dominio tipo
-burbuja, obtenida con el microscopio. 18 2.3. Pasos para la binarizaci´
-on de las imagenes dominios. En la columna iz- quierda se presentan las
-im´ agenes en las distintas etapas y en la derecha los perfiles de
-intensidad extra´ ıdos del segmento rojo indicado. (a)- Ima- gen
-original obtenida del microscopio. (b)- Resta de fondo para realzar el
-contraste. (c)- Aplicaci´ on de filtro lineal de suavizado, mas normali-
-zaci´ on no-lineal mediante la funci´ on tangente hiperb´ olica. (d)-
-Imagen umbralizada. (e)- Resultado luego de eliminar manchas y huecos.
-(f)- Comparaci´ on del contorno de la imagen binarizada con la imagen
-origi- nal luego de aplicar el filtro no-lineal. . . . . . . . . . . . .
-. . . . . . . 20 2.4. (a)- Vista en tres dimensiones de un corte
-transversal, en el planoxz, de la bobina modelada como un conjunto de
-espiras. (b)- Vista plana del mismo corte transversal . . . . . . . . .
-. . . . . . . . . . . . . . . 22 2.5. Porta-muestras dise˜ nado e
-impreso en 3D. (a)- Vista frontal del modelo. (b)- Vista de perfil. (c)-
-Foto del resultado final con la bobina montada 24 2.6. Esquema del
-amplificador de potencia clase D basado en una configu- raci´ on de
-puente H, con los cuatro MOSFET (1, 2, 3 y 4) encargados de la
-conmutaci´ on de corriente hacia la Bobina, los dos drivers con sus
-respectivos capacitores de bootstrap (C boot) para el control de los
-tran- sistores superiores del puente. En rojo y azul se indican las dos
-ramas que suministran corriente a la bobina . . . . . . . . . . . . . .
-. . . . . 25 2.7. M´ etodo usado para el crecimiento de las PDMs ante la
-aplicaci´ on de pulsos de campo de amplitud constanteH 0. Este consiste
-en saturar la muestra, nuclear los dominios, y luego aplicar pulsos de
-campo de amplitudH 0 de duraci´ onτ. Las im´ agenes se obtienen a campo
-nulo, en el tiempo intermedio entre los pulsos. . . . . . . . . . . . .
-. . . . . . . 27 3.1. (a)- Imagen obtenida con el microscopio de un
-agujero de la grilla de TEM. (b)- Resultado del proceso de binarizaci´
-on de la imagen del agu- jero. (c)- Contorno (curva verde) y centroide
-(cruz roja) del agujero obtenidos desde la imagen binarizada. . . . . .
-. . . . . . . . . . . . . . 30 3.2. Histograma de los radios (δ) junto
-con el ajuste gaussiano (curva roja) para determinar el valor medio (
-¯δ). . . . . . . . . . . . . . . . . . . . . 30
+(PMOKE) construido. [ LED, L1 - Lente colimadora de foco 11 cm, P -
+Polarizador, L2 - Lente ] [ condensadora de foco 30 cm, I - Iris, BM -
+divisor de haz (beam splitter), ] [ Ob - lente objetivo, S - muestra,
+A - analizador, Cam - c´ amara. Inset: ] imagen t´ ıpica de un dominio
+tipo burbuja, obtenida con el microscopio. 18 2.3. Pasos para la
+binarizaci´ on de las imagenes dominios. En la columna iz- quierda se
+presentan las im´ agenes en las distintas etapas y en la derecha [ los
+perfiles de intensidad extra´ ıdos del segmento rojo indicado. (a)- Ima-
+] gen original obtenida del microscopio. (b)- Resta de fondo para
+realzar [ el contraste. (c)- Aplicaci´ on de filtro lineal de suavizado,
+mas normali- ] [ zaci´ on no-lineal mediante la funci´ on tangente
+hiperb´ olica. (d)- Imagen ] [ umbralizada. (e)- Resultado luego de
+eliminar manchas y huecos. (f)- ] Comparaci´ on del contorno de la
+imagen binarizada con la imagen origi- nal luego de aplicar el filtro
+no-lineal. . . . . . . . . . . . . . . . . . . . 20 2.4. (a)- Vista en
+tres dimensiones de un corte transversal, en el planoxz, de la bobina
+modelada como un conjunto de espiras. (b)- Vista plana del mismo corte
+transversal . . . . . . . . . . . . . . . . . . . . . . . . 22 [ 2.5.
+Porta-muestras dise˜ nado e impreso en 3D. (a)- Vista frontal del
+modelo. ] [ (b)- Vista de perfil. (c)- Foto del resultado final con la
+bobina montada 24 ] 2.6. Esquema del amplificador de potencia clase D
+basado en una configu- raci´ on de puente H, con los cuatro MOSFET (1,
+2, 3 y 4) encargados de la conmutaci´ on de corriente hacia la Bobina,
+los dos drivers con sus respectivos capacitores de bootstrap (C boot)
+para el control de los tran- sistores superiores del puente. En rojo y
+azul se indican las dos ramas que suministran corriente a la bobina . .
+. . . . . . . . . . . . . . . . . 25 2.7. M´ etodo usado para el
+crecimiento de las PDMs ante la aplicaci´ on de pulsos de campo de
+amplitud constanteH 0. Este consiste en saturar la muestra, nuclear los
+dominios, y luego aplicar pulsos de campo de amplitudH 0 de duraci´ onτ.
+Las im´ agenes se obtienen a campo nulo, en el tiempo intermedio entre
+los pulsos. . . . . . . . . . . . . . . . . . . . 27 3.1. (a)- Imagen
+obtenida con el microscopio de un agujero de la grilla de [ TEM. (b)-
+Resultado del proceso de binarizaci´ on de la imagen del agu- ] jero.
+(c)- Contorno (curva verde) y centroide (cruz roja) del agujero
+obtenidos desde la imagen binarizada. . . . . . . . . . . . . . . . . .
+. . 30 3.2. Histograma de los radios (δ) junto con el ajuste gaussiano
+(curva roja) para determinar el valor medio ( ¯δ). . . . . . . . . . . .
+. . . . . . . . . 30
 
 ´Indice de figurasxv 3.3. Mapeo en el planoxzde la intensidad de campoH,
 en una escala de colores que representan de 0 mT (violeta oscuro) a 50
 mT (naranja cla- ro), al rededor de la bobina y sobre la muestra con sus
 correspondientes curvas de nivel. . . . . . . . . . . . . . . . . . . .
 . . . . . . . . . . . . 31 3.4. Intensidad de campo magn´ eticoHpara una
-configuraci´ on deNx = 12 y Nz = 8. (a)- Perfil del campo en funci´ on
-dez. La l´ ınea de puntos indica la posici´ on de la muestra a 1.7 mm
+configuraci´ on deNx = 12 y [ Nz = 8. (a)- Perfil del campo en funci´ on
+dez. La l´ ınea de puntos indica ] la posici´ on de la muestra a 1.7 mm
 del borde de la bobina. (b)- Perfil del campo en funci´ on dexevaluado
 sobre el plano de la muestra. En ambos casos se comparan los radiosa 0 =
 1 mm (curva azul), 2.5 mm (curva p´ urpura) y 4 mm (curva roja). . . . .
-. . . . . . . . . . . . . . . 32 3.5. (a)- Intensidad de campo magn´
-eticoµ0Hc, inductanciaL(b), y toleran- cia ∆ (c) en funci´ on dea 0
-paraN x = 12 yN z = 8. Las franjas grises representan el rango de
+. . . . . . . . . . . . . . . 32 [ 3.5. (a)- Intensidad de campo magn´
+eticoµ0Hc, inductanciaL(b), y toleran- ] [ cia ∆ (c) en funci´ on dea 0
+paraN x = 12 yN z = 8. Las franjas grises ] representan el rango de
 tolerancia permitido. . . . . . . . . . . . . . . . 33 3.6. Intensidad
-de campo magn´ eticoHc (a), inductancia (L), y tolerancia ∆ (b) en
-funci´ on deNx paraN z = 8 ya 0 = 2.3 mm. Las franjas grises representan
-las zonas de tolerancia permitido. . . . . . . . . . . . . . . 34 3.7.
-Intensidad de campo magn´ eticoHc (a), inductancia (L), y tolerancia ∆
-(b) en en funci´ on deNz paraN x = 12 ya 0 = 2.3 mm. Las franjas grises
-representan el rango de tolerancia permitido. . . . . . . . . . . . . .
-. . 35 3.8. (a) Imagen de un dominio magn´ etico tipo burbuja tomada con
-el mi- croscopio dentro del campo de visi´ on limitado por el iris. (b)
-y (c) His- togramas de intensidades (I) en bits de las zonas con
-magnetizaci´ onup ydown, junto a los ajustes gaussianos para determinar
-intensidades me- dias (I1 eI 2) y desviaciones est´ andar (σ). Se marcan
-con c´ ırculos azul y rojo las ´ areas utilizadas para determinarI1 eI
-2, respectivamente. . . . 36 3.9. (a)- Contraste en funci´ on del ´
-angulo ∆θ, conte = 100 ms,i LED = 0.3 A, G= 0 yγ= 1. Las franjas de
-color representan el error de las medidas. (b)- Error relativo deCen
-funci´ on de ∆θcorrespondiente a las medidas en (a). . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . . . . 37 3.10. (a)-
-Contraste en funci´ on deiLED, con sus franjas de error, parate = 100
-ms, ∆θ= 87 o,G= 0 yγ= 1. (b)- Error relativo deCen funci´ on de ∆θ
-correspondiente a las medidas en (a). . . . . . . . . . . . . . . . . .
-. . 38 3.11. (a) Contraste en funci´ on deGcon sus barras de error,
-parat e = 100 ms, ∆θ= 87 o,i LED = 0.5 A yγ= 1. (b)- Error relativo en
-funci´ on de Gcorrespondientes a el contraste en (a). . . . . . . . . .
-. . . . . . . . 39 3.12. (a)- Contraste en funci´ on del brilloγcon sus
-franjas de error, para te = 100 ms,G= 10, ∆θ= 87 o ei LED = 0.5 A. (b)-
-Error relativo deC en funci´ on deγcorrespondientes a las medidas en
-(a). . . . . . . . . . . 39
+de campo magn´ eticoHc (a), inductancia (L), y tolerancia ∆ [ (b) en
+funci´ on deNx paraN z = 8 ya 0 = 2.3 mm. Las franjas grises ]
+representan las zonas de tolerancia permitido. . . . . . . . . . . . . .
+. 34 3.7. Intensidad de campo magn´ eticoHc (a), inductancia (L), y
+tolerancia ∆ [ (b) en en funci´ on deNz paraN x = 12 ya 0 = 2.3 mm. Las
+franjas grises ] representan el rango de tolerancia permitido. . . . . .
+. . . . . . . . . . 35 3.8. (a) Imagen de un dominio magn´ etico tipo
+burbuja tomada con el mi- croscopio dentro del campo de visi´ on
+limitado por el iris. (b) y (c) His- togramas de intensidades (I) en
+bits de las zonas con magnetizaci´ onup ydown, junto a los ajustes
+gaussianos para determinar intensidades me- dias (I1 eI 2) y
+desviaciones est´ andar (σ). Se marcan con c´ ırculos azul y rojo las ´
+areas utilizadas para determinarI1 eI 2, respectivamente. . . . 36 [
+3.9. (a)- Contraste en funci´ on del ´ angulo ∆θ, conte = 100 ms,i LED =
+0.3 A, ] [ G= 0 yγ= 1. Las franjas de color representan el error de las
+medidas. ] (b)- Error relativo deCen funci´ on de ∆θcorrespondiente a
+las medidas en (a). . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . 37 [ 3.10. (a)- Contraste en funci´ on deiLED, con
+sus franjas de error, parate = 100 ] [ ms, ∆θ= 87 o,G= 0 yγ= 1. (b)-
+Error relativo deCen funci´ on de ∆θ ] correspondiente a las medidas en
+(a). . . . . . . . . . . . . . . . . . . . 38 3.11. (a) Contraste en
+funci´ on deGcon sus barras de error, parat e = 100 [ ms, ∆θ= 87 o,i LED
+= 0.5 A yγ= 1. (b)- Error relativo en funci´ on de ] Gcorrespondientes a
+el contraste en (a). . . . . . . . . . . . . . . . . . 39 3.12. (a)-
+Contraste en funci´ on del brilloγcon sus franjas de error, para [ te =
+100 ms,G= 10, ∆θ= 87 o ei LED = 0.5 A. (b)- Error relativo deC ] en
+funci´ on deγcorrespondientes a las medidas en (a). . . . . . . . . . .
+39
 
 xvi ´Indice de figuras 3.13. Grafico del contraste medido (C) frente aCγ
-calculado como una funci´ on de potencia de 1/γ(Ecuaci´ on 3.1), para
-los tiempos de exposici´ onte = 50, 100 y 200 ms, y los valores
-respectivos de gananciaG= 16,G= 10 yG= 1. . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . 40 3.14. (a) Contraste en funci´
-on dete con ∆θ= 87 o,i LED = 0.3 A,G= 0 y γ= 1. (b) Error relativo
-correspondiente. . . . . . . . . . . . . . . . . . 41 3.15. (a)- Datos
-del osciloscopio de un pulso de duraci´ o 300 ms y amplitudVcc aplicado
-sobre la bobina (curva azul), junto a la diferencia de potencial Vb
-establecida en ella (curva roja). Cuando se alcanza el estado estacio-
-nario, la diverencia de potencial tiende aV 0 = 2.4 V. (b)- Gr´ afico de
-ln[(Vb −V 0)/(Vcc −V 0)] en funci´ on del tiempo sobre la bobina t. La
-cur- va negra corresponde al ajuste leneal realizado para obtener el
-tiempo caracter´ ısticotc. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . 42 3.16. (a) Superposici´ on de dominios magn´ eticos
-tipo burbuja tras la binari- zaci´ on para la muestra conpIr = 7.5 mTorr
-(Hc = 137 Oe,τ= 9 ms). (b) Distribuci´ on estad´ ıstica de los radios
-(ρ) calculados para cada etapa del crecimiento. (c) Evoluci´ on del
-radio medio ¯ρen funci´ on del tiem- po acumuladot N . El ajuste lineal
-(curva roja) presenta un error relativo εr = 0.005, validando la
-determinaci´ on de la velocidad media de expansi´ on. 43 3.17. (a)-
-Linealizaci´ on de la velocidad en funci´ on de la corriente aplicada
-para la muestra de 3 mTorr. (b)- Campo magn´ etico extra´ ıdo mediante
-la ley decreepen funci´ on de la corriente para el conjunto de muestras
-estudiadas. (c)- Constante de calibraci´ onκen funci´ on de la presi´ on
-de crecimiento (pIr ). La l´ ınea de puntos roja indica el valor medio
-global ¯κ. 44 3.18. Comparaci´ on entre los resultados de la referencia
-y los de este trabajo, para las velocidades de pared de dominio en
-funci´ on de del campo aplicado. 45
+calculado como una funci´ on [ de potencia de 1/γ(Ecuaci´ on 3.1), para
+los tiempos de exposici´ onte = ] [ 50, 100 y 200 ms, y los valores
+respectivos de gananciaG= 16,G= 10 ] yG= 1. . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . 40 [ 3.14. (a) Contraste en
+funci´ on dete con ∆θ= 87 o,i LED = 0.3 A,G= 0 y ] γ= 1. (b) Error
+relativo correspondiente. . . . . . . . . . . . . . . . . . 41 3.15.
+(a)- Datos del osciloscopio de un pulso de duraci´ o 300 ms y
+amplitudVcc aplicado sobre la bobina (curva azul), junto a la diferencia
+de potencial Vb establecida en ella (curva roja). Cuando se alcanza el
+estado estacio- [ nario, la diverencia de potencial tiende aV 0 = 2.4 V.
+(b)- Gr´ afico de ] [ ln[(Vb −V 0)/(Vcc −V 0)] en funci´ on del tiempo
+sobre la bobina t. La cur- ] va negra corresponde al ajuste leneal
+realizado para obtener el tiempo caracter´ ısticotc. . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . 42 3.16. (a) Superposici´ on
+de dominios magn´ eticos tipo burbuja tras la binari- [ zaci´ on para la
+muestra conpIr = 7.5 mTorr (Hc = 137 Oe,τ= 9 ms). ] (b) Distribuci´ on
+estad´ ıstica de los radios (ρ) calculados para cada etapa del
+crecimiento. (c) Evoluci´ on del radio medio ¯ρen funci´ on del tiem- po
+acumuladot N . El ajuste lineal (curva roja) presenta un error relativo
+εr = 0.005, validando la determinaci´ on de la velocidad media de
+expansi´ on. 43 3.17. (a)- Linealizaci´ on de la velocidad en funci´ on
+de la corriente aplicada para la muestra de 3 mTorr. (b)- Campo magn´
+etico extra´ ıdo mediante la ley decreepen funci´ on de la corriente
+para el conjunto de muestras estudiadas. (c)- Constante de calibraci´
+onκen funci´ on de la presi´ on de crecimiento (pIr ). La l´ ınea de
+puntos roja indica el valor medio global ¯κ. 44 3.18. Comparaci´ on
+entre los resultados de la referencia y los de este trabajo, para las
+velocidades de pared de dominio en funci´ on de del campo aplicado. 45
 
 Cap´ ıtulo 1 Introducci´ on El estudio de la din´ amica de paredes de
 dominios magn´ eticos en peliculas ultra- delgadas es actualmente de
@@ -387,18 +390,18 @@ posici´ onr, se le asigna una magnetizaci´ onM(r) [14, 18]. Esta
 aproximaci´ on describe al sistema en escalas mayo- res a las at´
 omicas, pudiendo determinar los estados de equilibrio a trav´ es de t´
 ecnicas como el c´ alculo variacional. El estado del sistema es aquel
-donde la energ´ ıa libre tiene un m´ ınimo absoluto o local, cumpliendo
-la condici´ onm2 = 1, dondem=M/M S, conM S la magnetizaci´ on de
-saturaci´ on. Este estado se encuentra minimizando una funcional de
-energ´ ıa libre que resulta de la competencia entre interacciones
+donde la energ´ ıa libre tiene [ un m´ ınimo absoluto o local,
+cumpliendo la condici´ onm2 = 1, dondem=M/M S, ] conM S la magnetizaci´
+on de saturaci´ on. Este estado se encuentra minimizando una funcional
+de energ´ ıa libre que resulta de la competencia entre interacciones
 locales y no-locales. Los t´ erminos energ´ eticos locales son la energ´
 ıa de intercambio (oexchange), asociada al ferromagnetismo del sistema,
 la energ´ ıa de anisotrop´ ıa, que tienen en cuen- ta las direcciones
-preferenciales del materia, la energ´ ıa Zeeman, relacionada al campo
+preferenciales del materia, la energ´ ıa Zeeman, relacionada al campo [
 externo, y la energ´ ıa magneto-el´ astica, asociada a tensiones locales
-no-magn´ eticas. Asi- mismo, est´ an los t´ erminos no-locales, a partir
-de los cuales se generan torques sobre la magnetizaci´ on en cada punto
-del sistema, dependientes de todos los dem´ as puntos. Las
+no-magn´ eticas. Asi- ] mismo, est´ an los t´ erminos no-locales, a
+partir de los cuales se generan torques sobre la magnetizaci´ on en cada
+punto del sistema, dependientes de todos los dem´ as puntos. Las
 contribuciones no locales m´ as significativas son la energ´ ıa dipolar
 (ostray field), asociada a la deformaci´ on de las l´ ıneas de campo
 debido a la forma del material y a las interfaces, y la energ´ ıa
@@ -489,15 +492,15 @@ energ´ ıa puede escribirse como
 las densidades de energ´ ıa magneto-el´ astica y el´ astica de origen no
 magn´ etico, respectivamente. Este t´ ermino es responsable de la
 sensibilidad de los materiales magn´ eticos a las tensiones mec´ anicas.
-T´ erminos no-locales Los t´ erminos no-locales son complejos de
-analizar dado aque dependen de las contri- buciones de todo el sistema.
-El t´ ermino de energ´ ıa dipolar (Edip) se asocia a la energ´ ıa
-generada por la interacci´ on de un cuerpo magn´ etico con el campo que
-este mismo in- duceH dip. Este campo es el resultado de las divergencias
-de la magnetizaci´ on, que act´ uan como cargas magn´ eticas volum´
-etricas y superficiales. La energ´ ıa asociada se puede escribir de
-manera similar a la energ´ ıa Zeeman como Edip =− Z Ms (Hdip ·m) dV
-ol.(1.5) Esta contribuci´ on est´ a detr´ as de la formaci´ on de
+T´ erminos no-locales [ Los t´ erminos no-locales son complejos de
+analizar dado aque dependen de las contri- ] buciones de todo el
+sistema. El t´ ermino de energ´ ıa dipolar (Edip) se asocia a la energ´
+ıa generada por la interacci´ on de un cuerpo magn´ etico con el campo
+que este mismo in- duceH dip. Este campo es el resultado de las
+divergencias de la magnetizaci´ on, que act´ uan como cargas magn´
+eticas volum´ etricas y superficiales. La energ´ ıa asociada se puede
+escribir de manera similar a la energ´ ıa Zeeman como Edip =− Z Ms (Hdip
+·m) dV ol.(1.5) Esta contribuci´ on est´ a detr´ as de la formaci´ on de
 dominios magn´ eticos, ya que el sistema busca configurar la
 magnetizaci´ on en flujos cerrados para minimizar la presencia de cargas
 magn´ eticas y, por ende, la energ´ ıaEdip. La energ´ ıa de
@@ -517,8 +520,8 @@ en la anisotrop´ ıa magn´ etica (anisotrop´ ıa de esfuerzo) [16]. Energ´
 ıa Libre Total (ET ) Finalmente, al consolidar todas estas
 contribuciones, se obtiene la nerg´ ıa libre total del sistema seg´ un
 la aproximaci´ on micromagn´ etica, cuya minimizaci´ on define el estado
-de equilibrio del ferromagneto: ET = Z  (∇m)2 + (Ksin2θ)−(M s H·m) +e e
-−(M s (Hdip ·m))  dV ol(1.6)
+de equilibrio del ferromagneto: ET = Z  [ (∇m)2 + (Ksin2θ)−(M s H·m) +e
+e −(M s (Hdip ·m)) ]  dV ol(1.6)
 
 1.2 Peliculas ferromagn´ eticas ultradelgadas7 La resoluci´ on de este
 funcional bajo las condiciones de contorno adecuadas permi- te predecir
@@ -544,20 +547,21 @@ Estos efectos se pueden describir a trav´ es de una constante anisotr´
 opica efectiva, cuyas contribuciones pueden deberse a la an- isotrop´ ıa
 cristalina, contribuciones magnetoest´ aticas, contribuciones magnetoel´
 asticas, o de anisotrop´ ıas superficiales [24]. Esta constante efectiva
-puede calcularse como: Keff =K− 1 2µ0M2 S +K me + KS ε (1.7) El primer
-t´ ermino (K) es la contribuci´ on de la anisotrop´ ıa cristalina, el
-segundo t´ ermino la contribuci´ on magneto-est´ atica para pel´ ıculas
-delgadas, dondeµ0 es la permeabilidad magn´ etica del vac´ ıo, el tercer
-t´ ermino (Kme) es la contribuci´ on magneto-el´ astica, y el ´ ultimo
-la contribuci´ on superficial para una pel´ ıcula delgada de espesor
-constanteϵ. De una manera similar a la anisotrop´ ıa cristalina, siKeff
-es positiva, se encuentra un eje f´ acil en direcci´ on perpendicular al
-plano de la muestra, y siK eff es negativa, este estar´ a contenido en
-el plano. La condici´ onKeff = 0 determina un espesor cr´ ıtico (εc) por
-encima del cual el sistema prefiere alinear la magnetizaci´ on con el
-plano. Esta dependencia de la anisotrop´ ıa efectiva con el espesor se
-ha comprobado experimental- mente. En la figura 1.2 se muestran datos
-para pel´ ıculas de Co de diferentes espesores [15, 25].
+puede calcularse como: Keff =K− 1 2µ0M2 [ S +K me + KS ] ε (1.7) El
+primer t´ ermino (K) es la contribuci´ on de la anisotrop´ ıa
+cristalina, el segundo t´ ermino la contribuci´ on magneto-est´ atica
+para pel´ ıculas delgadas, dondeµ0 es la permeabilidad magn´ etica del
+vac´ ıo, el tercer t´ ermino (Kme) es la contribuci´ on magneto-el´
+astica, y el ´ ultimo la contribuci´ on superficial para una pel´ ıcula
+delgada de espesor constanteϵ. De una manera similar a la anisotrop´ ıa
+cristalina, siKeff es positiva, se encuentra un eje f´ acil en direcci´
+on perpendicular al plano de la muestra, y siK eff es negativa, este
+estar´ a contenido en el plano. La condici´ onKeff = 0 determina un
+espesor cr´ ıtico (εc) por encima del cual el sistema prefiere alinear
+la magnetizaci´ on con el plano. Esta dependencia de la anisotrop´ ıa
+efectiva con el espesor se ha comprobado experimental- mente. En la
+figura 1.2 se muestran datos para pel´ ıculas de Co de diferentes
+espesores [15, 25].
 
 8Introducci´ on Figura 1.2:Producto de la constante anisotropica
 efectivaK eff por el espesor de la pel´ ıcula delgada (ε), en funci´ on
@@ -567,9 +571,9 @@ midiendo ciclos de hist´ eresis en di- ferentes ejes respecto al plano
 de la muestra. En la figura 1.3 se muestran ciclos de hist´ eresis
 medidos en un eje perpendicular (a) y otro contenido en el plano de la
 mues- tra (b), en una pel´ ıcula delgada de Co con anisotrop´ ıa
-perpendicular la plano [15, 26]. En la figura 1.3-(a) se marcan el campo
-coercitivoH Coer , el campo para el cualM= 0, la magnetizaci´ on de
-saturaci´ on (MS) a la que llega el sistema luego de aplicar un campo
+perpendicular la plano [15, 26]. [ En la figura 1.3-(a) se marcan el
+campo coercitivoH Coer , el campo para el cualM= 0, ] la magnetizaci´ on
+de saturaci´ on (MS) a la que llega el sistema luego de aplicar un campo
 mayor que el campo de saturaci´ onHS. Figura 1.3:Ciclos de histeresis de
 una pelicula delgada con un capa de Co en el eje perpendi- cular al
 plano (a) y el eje contenido en el plano (b) (Extra´ ıdo y mdificado de
@@ -589,8 +593,8 @@ muestras, los dominios magn´ eticos pueden presentar una amplia cantidad
 de formas. En la figura 1.4 muestran imagenes de patrones rec-
 tangulares (a), burbuja (b) y tipo dientes de sierra (c), todos tomados
 con microscop´ ıa magneto-´ optica. Figura 1.4:Imagenes de patrones de
-dominios magneticos tomadas con MO. (a)- Dominios rectangulares. (b)-
-Dominios tipo burbuja. (c)- Dominios tipo dientes de sierra. Entre dos
+dominios magneticos tomadas con MO. (a)- Dominios [ rectangulares. (b)-
+Dominios tipo burbuja. (c)- Dominios tipo dientes de sierra. ] Entre dos
 dominios con distinta direcci´ on de magnetizaci´ on aparece una
 interfaz en la cual la direcci´ on de la magnetizaci´ on pasa de una
 direcci´ on a otra. Estas interfaces se llaman paredes de dominios magn´
@@ -611,39 +615,40 @@ otro lado, pueden esperarse valores deςde unos pocos nan´ ometros, por
 lo que existen pocas t´ ecnicas que permiten obserar directamente
 paredes de dominio. Algunos
 
-10Introducci´ on ejemplos son im´ agenes por MFM
-(Magnetic-Force-Microscopy), o algunas t´ ecnicas con haces polarizados
-de electrones [27–29]. Para las muestras utilizadas en este trabajo, el
-espesor de las paredes de dominio fue determinado usando la relaci´ on
-1.8 en el trabajo de la referencia [9], obteniendo espesores entre 3.5 y
-5 nm para las distintas pel´ ıculas. Figura 1.5:Rotaci´ on de la
-magnetizaci´ on en paredes de Bloch (a) y en paredes de N´ eel (b). 1.4.
-Tecnicas de Observaci´ on de Dominios Existe una gran cantidad de m´
-etodos para visualizar dominios magn´ eticos, que incluyen t´ ecnicas
-como: el m´ etodo de patrones de (Bitter Patterns)[30, 31], micros- cop´
-ıa de fuerza magn´ etica (Magnetic Force Micrscopy-MFM) [32–34], los m´
-etodos magneto-´ opticos (MO) [7, 10, 11], m´ etodos de electrones
-polarizados con microscop´ ıa electronica de barrido (Scanning Electron
-Microscope-SEM) y microscop´ ıa electr´ onica de transmisi´ on
-(Transmision Electron Microscope-TEM) [35–39], as´ ı como m´ etodos de
-magnetometr´ ıa, que permiten medir la magnetizaci´ on en funci´ on de
-distinas variables c´ omo la temperatura y el campo externo,,como el
-magnetometro SQUID (Supercon- ducting Quantum Interference Device) [9,
-40–43]. Cada m´ etodo es sensible a cantidades magn´ eticas determinadas
-y cada uno presenta ventajas y limitaciones relacionadas a la resoluci´
-on espacial y la sensibilidad de los instrumentos a estimulos externos.
-Los metodos magneto-´ opticos presentan la ventaja de poder realizar
-estudios de la din´ ami- ca de los dominios observandolos directamente y
-con la posibilidad de aplicar campos magn´ eticos de intensidad
-arbitrar´ ıa sindefinidas, sin contaminar la muestra. La observaci´ on
-de dominios usando m´ etodos magneto-opticos se basa en la depen- dencia
-de la rotaci´ on de la polarizaci´ on de un haz de luz al interactuar
-con una muestra magnetizada. Existen dos tipos de procesos en el an´
-alisis de la microscopia MO: trans- misi´ on y reflexi´ on, los cuales
-dependen de la naturaleza de la muestra a analizar. Los procesos
-asociados a la reflecci´ on se conocen como efectos magneto-´ opticos
-Kerr, mien- tras que los procesos de transmisi´ on son conocidos como
-fenomenos de efecto Faraday. Estos efectos se pueden dividir en efectos
+10Introducci´ on [ ejemplos son im´ agenes por MFM
+(Magnetic-Force-Microscopy), o algunas t´ ecnicas con ] haces
+polarizados de electrones [27–29]. Para las muestras utilizadas en este
+trabajo, el espesor de las paredes de dominio fue determinado usando la
+relaci´ on 1.8 en el trabajo de la referencia [9], obteniendo espesores
+entre 3.5 y 5 nm para las distintas pel´ ıculas. Figura 1.5:Rotaci´ on
+de la magnetizaci´ on en paredes de Bloch (a) y en paredes de N´ eel
+(b). 1.4. Tecnicas de Observaci´ on de Dominios Existe una gran cantidad
+de m´ etodos para visualizar dominios magn´ eticos, que incluyen t´
+ecnicas como: el m´ etodo de patrones de (Bitter Patterns)[30, 31],
+micros- cop´ ıa de fuerza magn´ etica (Magnetic Force Micrscopy-MFM)
+[32–34], los m´ etodos magneto-´ opticos (MO) [7, 10, 11], m´ etodos de
+electrones polarizados con microscop´ ıa electronica de barrido
+(Scanning Electron Microscope-SEM) y microscop´ ıa electr´ onica de
+transmisi´ on (Transmision Electron Microscope-TEM) [35–39], as´ ı como
+m´ etodos de magnetometr´ ıa, que permiten medir la magnetizaci´ on en
+funci´ on de distinas variables c´ omo la temperatura y el campo
+externo,,como el magnetometro SQUID (Supercon- ducting Quantum
+Interference Device) [9, 40–43]. Cada m´ etodo es sensible a cantidades
+magn´ eticas determinadas y cada uno presenta ventajas y limitaciones
+relacionadas a la resoluci´ on espacial y la sensibilidad de los
+instrumentos a estimulos externos. Los [ metodos magneto-´ opticos
+presentan la ventaja de poder realizar estudios de la din´ ami- ] ca de
+los dominios observandolos directamente y con la posibilidad de aplicar
+campos magn´ eticos de intensidad arbitrar´ ıa sindefinidas, sin
+contaminar la muestra. [ La observaci´ on de dominios usando m´ etodos
+magneto-opticos se basa en la depen- ] dencia de la rotaci´ on de la
+polarizaci´ on de un haz de luz al interactuar con una muestra
+magnetizada. Existen dos tipos de procesos en el an´ alisis de la
+microscopia MO: trans- misi´ on y reflexi´ on, los cuales dependen de la
+naturaleza de la muestra a analizar. Los [ procesos asociados a la
+reflecci´ on se conocen como efectos magneto-´ opticos Kerr, mien- ]
+tras que los procesos de transmisi´ on son conocidos como fenomenos de
+efecto Faraday. Estos efectos se pueden dividir en efectos
 longitudinales, cuando la magnetizaci´ on es paralela a la superficie de
 la muestra y se encuentra en el plano de incidencia de la luz, efectos
 transversales, cuando la magnetizaci´ on es paralela a la superficie de
@@ -773,23 +778,23 @@ descriptas como interfaces el´ asticas unidimensionales en presencia de
 desorden. En una aproximaci´ on cuasi-est´ atica paraH≪H d, puede
 obtenerse la ley de velocidades promedio de las PDM para el r´ egimen
 decreep[56, 57], donde esta queda univocamente determinada por el
-campoH: V=exp   −α(µ 0H)−µ +β  ,(1.9) dondeµ 0 es la permeabilidad del
+campoH: V=exp \00 −α(µ 0H)−µ +β  ,(1.9) dondeµ 0 es la permeabilidad del
 vac´ ıo,αyβson par´ ametros dependientes del material y la temperatura,
-pero independientes del campo, yµel exponente decreep. Se predice que el
-el exponente de creep esµ= 1/4 para interfaces unidimensionales en
-medios aleatorios de tipo Edward-Wilkinson [9, 53, 58]. En la figura
-1.8-(a) se muestran mediciones de velocidad en funci´ on del campo en
+pero independientes del campo, yµel exponente decreep. Se predice [ que
+el el exponente de creep esµ= 1/4 para interfaces unidimensionales en
+medios ] aleatorios de tipo Edward-Wilkinson [9, 53, 58]. En la figura
+1.8-(a) se muestran mediciones de velocidad en funci´ on del campo en [
 pel´ ıculas delgadas de Pt/Co/Pt, realizadas por Lemerle et al. en el
-art´ ıculo de la re- ferencia [48], donde pueden observarse los reg´
-ımenes anteriormente nombrados, donde µ= 1/4. La figura 1.8-(b) muestra
-la zona decreepdel logar´ ıtmo de la velocidad y la inversa del campo
-elevado al exponente de creep esperado. Se observa un comporta- miento
-lineal, correspondiendo a la tendencia descrita por la ecuaci´ on 1.9.
-Al realizar un ajuste lineal deln(V) en funci´ on deH −1/4, se pueden
-determinarαyβ. Figura 1.8:Ejemplos de curvas de velocidad en funci´ on
-del campo en pel´ ıculas delgas de Pt/Co/Pt (a), y una ampliaci´ on del
-r´ egimen decreepen escala logar´ ıtmica (b) extraidos de la referencia
-[48].
+art´ ıculo de la re- ] ferencia [48], donde pueden observarse los reg´
+ımenes anteriormente nombrados, donde [ µ= 1/4. La figura 1.8-(b)
+muestra la zona decreepdel logar´ ıtmo de la velocidad y la ] inversa
+del campo elevado al exponente de creep esperado. Se observa un
+comporta- miento lineal, correspondiendo a la tendencia descrita por la
+ecuaci´ on 1.9. Al realizar un ajuste lineal deln(V) en funci´ on deH
+−1/4, se pueden determinarαyβ. Figura 1.8:Ejemplos de curvas de
+velocidad en funci´ on del campo en pel´ ıculas delgas de [ Pt/Co/Pt
+(a), y una ampliaci´ on del r´ egimen decreepen escala logar´ ıtmica (b)
+extraidos de la ] referencia [48].
 
 Cap´ ıtulo 2 Metodolog´ ıa Los sistemas de baja dimensi´ on presentan
 caracter´ ıstias notablemente distintas res- pecto a un sistema volum´
@@ -809,9 +814,9 @@ amica de las paredes de dominio (PDMs) [5, 9, 45, 60]. En este cap´
 estos sistemas. En primer lugar, se presenta la composici´ on de las
 pel´ ıculas y sus ca- racter´ ısticas estructurales, enfoc´ andose en
 los par´ ametros relevantes para este trabajo. Seguidamente, se detalla
-el dise˜ no y la construcci´ on de un microscopio basado en el efecto
+el dise˜ no y la construcci´ on de un microscopio basado en el [ efecto
 Kerr magneto-´ optico polar (PMOKE -Polar Magneto-Optical Kerr Effect),
-di- se˜ nado para permitir la observaci´ on y el an´ alisis de los
+di- ] se˜ nado para permitir la observaci´ on y el an´ alisis de los
 dominios magn´ eticos. Finalmen- te, se describe el desarrollo del
 sistema el´ ectrico para la generaci´ on de pulsos de campo magn´ etico
 uniforme necesarios para producir el movimiento de las PDMs. Finalmente,
@@ -834,22 +839,23 @@ utilizando campos magn´ eticos para confinar cerca del blanco a los
 electrones del plasma, lo que aumenta la tasa de colisiones, ace- lera
 el crecimiento y protege el sustrato de un calentamiento excesivo por
 impacto de electrones [61]. Las pel´ ıculas son multicapas reflectantes
-crecidas sobre un sustrato de SiO2 oxidado t´ ermicamente, con la
-estructura SiO2//Ta(5)/Pt(3)/Co(0.8)/Ir(1)/Ta(2), donde los n´ umeros
+crecidas sobre un sustrato de SiO2 oxidado [ t´ ermicamente, con la
+estructura SiO2//Ta(5)/Pt(3)/Co(0.8)/Ir(1)/Ta(2), donde los ] n´ umeros
 entre par´ entesis indican el espesor en nm, obtenido utilizando
 reflectometr´ ıa de rayos X (figura 2.1) [56, 62]. Las pel´ ıculas se
 presentan en piezas cuadradas con dimensiones laterales de
 aproximadamente 3 mm y un espesor del sustrado de 0.7 mm. Figura
 2.1:Esquema de las pel´ ıculas ultradelgadas con sus composiciones y
-espesores entre par´ entesis. Las capas de Ta se utilizan para proteger
-las capas de Pt/Co/Ir, y la din´ amica de los dominios magn´ eticos est´
-a determinada por la interacci´ on de estas ´ ultimas tres capas [63].
-El cambio en la din´ amica de los dominios magn´ eticos por cambios en
-la presi´ on de crecimiento de capas adyacentes a la capa magn´ etica,
-se ha estudiado en el trabajo de Lavrijsen et. al. [60], concluyendo que
-estos conducen a variaciones en la APP, relacionada con la energ´ ıa de
-la PDM, como se explic´ o en el cap´ ıtulo 1. Todas las capas se
-crecieron a una presi´ on de Ar de 3 mTorr, a excepci´ on de la capa de
+espesores entre par´ entesis. [ Las capas de Ta se utilizan para
+proteger las capas de Pt/Co/Ir, y la din´ amica ] de los dominios magn´
+eticos est´ a determinada por la interacci´ on de estas ´ ultimas tres
+capas [63]. El cambio en la din´ amica de los dominios magn´ eticos por
+cambios en la presi´ on de crecimiento de capas adyacentes a la capa
+magn´ etica, se ha estudiado en el trabajo de Lavrijsen et. al. [60],
+concluyendo que estos conducen a variaciones en la APP, relacionada con
+la energ´ ıa de la PDM, como se explic´ o en el cap´ ıtulo 1. Todas las
+capas se crecieron a una presi´ on de Ar de 3 mTorr, a excepci´ on de la
+capa de
 
 2.2 Construcci´ on de un Microscopio PMOKE17 Ir, la cual se deposit´ o
 con diferentes presiones de crecimiento (p Ir ), entre 3 y 25.5 mTorr.
@@ -909,10 +915,10 @@ utilizando el mismo objetivo que se emple´ o para iluminar. La imagen de
 la muestra son adquiridas por una camara digital (Cam), equipada con un
 sensor CMOS de 5 megap´ ıxeles (2560×1920) y un tama˜ no de p´ ıxel de
 2.2µm×2.2µm. Figura 2.2:Esquema del microscopio de efecto Kerr polar
-(PMOKE) construido. LED, L1 - Lente colimadora de foco 11 cm, P -
-Polarizador, L2 - Lente condensadora de foco 30 cm, I - Iris, BM -
+(PMOKE) construido. LED, L1 - [ Lente colimadora de foco 11 cm, P -
+Polarizador, L2 - Lente condensadora de foco 30 cm, I - ] [ Iris, BM -
 divisor de haz (beam splitter), Ob - lente objetivo, S - muestra, A -
-analizador, Cam - c´ amara. Inset: imagen t´ ıpica de un dominio tipo
+analizador, Cam ] - c´ amara. Inset: imagen t´ ıpica de un dominio tipo
 burbuja, obtenida con el microscopio.
 
 2.2 Construcci´ on de un Microscopio PMOKE19 Optimizaci´ on de las
@@ -961,11 +967,11 @@ embargo, la imagen sigue siendo bastante ruidosa.
 20Metodolog ´ ıa Figura 2.3:Pasos para la binarizaci´ on de las imagenes
 dominios. En la columna izquierda se presentan las im´ agenes en las
 distintas etapas y en la derecha los perfiles de intensidad extra´ ıdos
-del segmento rojo indicado. (a)- Imagen original obtenida del
-microscopio. (b)- Resta de fondo para realzar el contraste. (c)-
-Aplicaci´ on de filtro lineal de suavizado, mas normalizaci´ on no-
+[ del segmento rojo indicado. (a)- Imagen original obtenida del
+microscopio. (b)- Resta de fondo ] [ para realzar el contraste. (c)-
+Aplicaci´ on de filtro lineal de suavizado, mas normalizaci´ on no- ] [
 lineal mediante la funci´ on tangente hiperb´ olica. (d)- Imagen
-umbralizada. (e)- Resultado luego de eliminar manchas y huecos. (f)-
+umbralizada. (e)- Resultado luego ] de eliminar manchas y huecos. (f)-
 Comparaci´ on del contorno de la imagen binarizada con la imagen
 original luego de aplicar el filtro no-lineal.
 
@@ -998,17 +1004,17 @@ un ´ ultimo filtro que elimine manchas y huecos menores a un ´ area de
 perfil qued´ o perfectamente definido. Para verificar que no haya ning´
 un problema en el proceso de binarizaci´ on se su- perpusieron los
 contornos de las im´ agenes binarizadas con el de las im´ agenes luego
-de aplicar el filtro no-lineal. Como se muestra en la figura 2.3-(f) hay
-una buena concor- dancia entre ambas. 2.2.2. Sistema el´ ectrico El
-sistema el´ ectrico dise˜ nado tiene como funci´ on principal la
+de [ aplicar el filtro no-lineal. Como se muestra en la figura 2.3-(f)
+hay una buena concor- ] dancia entre ambas. 2.2.2. Sistema el´ ectrico
+El sistema el´ ectrico dise˜ nado tiene como funci´ on principal la
 generaci´ on y el control de los pulsos de campo magn´ etico necesarios
 para desplazar las PDMs. Este est´ a com- puesto por una bobina acoplada
 al porta-muestras, encargada de generar dichos pulsos, y un amplificador
 de potencia clase D que suministra la energ´ ıa para alimentarla de
 forma controlada. Para la construcci´ on de la bobina se realiz´ o un
 modelado te´ orico previo con el fin de definir una geometr´ ıa acorde a
-la respuesta magn´ etica deseada. Posteriormente, se dise˜ n´ o e
-imprimi´ o el porta-muestras para adaptarse a las dimen- siones de la
+la respuesta magn´ etica deseada. [ Posteriormente, se dise˜ n´ o e
+imprimi´ o el porta-muestras para adaptarse a las dimen- ] siones de la
 bobina. Finalmente, el desarrollo del amplificador consisti´ o en el
 dise˜ no y
 
@@ -1055,43 +1061,47 @@ exacta de la bobina, puede ser un m´ ınimo o un m´ aximo. Por lo tanto,
 se puede condicionar la intensidad de campo, a la que llamaremosH b, en
 el borde de la muestra para que sea aproximadamente igual a la
 intensidad en el centro (el ejez), nombrada comoH c. Definimos la
-tolerancia ∆ como ∆ =  Hc −H b Hc  ×100,(2.4) exigiendo que esta sea
-menor que 1, es decir, que la intensidad de campo en el centro varie a
-lo sumo el 1 %, tomandoµ 0Hc = 20 mT. Adem´ as, para obtener un bobinado
-sensillo y sim´ etrico, se consideraron solo los valores pares deN x yN
-z. Adem´ as, como el radio de lak−esima espira se calcula como ak =a 0
-+d·k,(2.5) donded= 0.25 mm es el diametro del cable, solo es necesario
-determinar el radio internoa 0. Por lo tanto, la bobina queda
-completamente definida espec´ ıficando los n´ umerosNx,N z ya 0. La
-bobina posee una resistencia internaR i y se conect´ o a una resistencia
-de pro- tecci´ onRp, definiendo un circuito RL [72], caracterizado por
-un tiempo caracter´ ıstico tc asociado a la etapa transitoria de la
-bobina. Este tiempo limita el rango de pulsos constantes que se pueden
-aplicar sobre las muestras, y se calcula como tc = L RT ,(2.6) dondeLes
-la inductancia de la bobina yR T =R i +R p. Con el fin de obtenert c mas
-bajo posible, del grupo de configuraciones que cumplieron las
-condiciones impuestas, se seleccion´ o aquellas con el menor valor de
-inductanciaL, la cual se calcul´ o seg´ un la expresi´ on L= Φ i =µ 0 Z
-S H·dS,(2.7) donde Φ es el flujo magn´ etico sobreS, la superficie
-encerrada por la bobina [70].
+tolerancia ∆ como ∆ =
 
-24Metodolog ´ ıa La fabricaci´ on del porta-muestras se realiz´ o una
-vez definida la configuraci´ on geom´ etri- ca de la bobina para poder
+Hc −H b Hc
+
+×100,(2.4) exigiendo que esta sea menor que 1, es decir, que la
+intensidad de campo en el centro varie a lo sumo el 1 %, tomandoµ 0Hc =
+20 mT. Adem´ as, para obtener un bobinado sensillo y sim´ etrico, se
+consideraron solo los valores pares deN x yN z. Adem´ as, como el radio
+de lak−esima espira se calcula como [ ak =a 0 +d·k,(2.5) ] donded= 0.25
+mm es el diametro del cable, solo es necesario determinar el radio
+internoa 0. Por lo tanto, la bobina queda completamente definida espec´
+ıficando los n´ umerosNx,N z ya 0. La bobina posee una resistencia
+internaR i y se conect´ o a una resistencia de pro- tecci´ onRp,
+definiendo un circuito RL [72], caracterizado por un tiempo caracter´
+ıstico tc asociado a la etapa transitoria de la bobina. Este tiempo
+limita el rango de pulsos constantes que se pueden aplicar sobre las
+muestras, y se calcula como tc = L RT ,(2.6) [ dondeLes la inductancia
+de la bobina yR T =R i +R p. Con el fin de obtenert c mas ] bajo
+posible, del grupo de configuraciones que cumplieron las condiciones
+impuestas, se seleccion´ o aquellas con el menor valor de inductanciaL,
+la cual se calcul´ o seg´ un la expresi´ on L= Φ i =µ 0 Z S H·dS,(2.7)
+donde Φ es el flujo magn´ etico sobreS, la superficie encerrada por la
+bobina [70].
+
+24Metodolog ´ ıa [ La fabricaci´ on del porta-muestras se realiz´ o una
+vez definida la configuraci´ on geom´ etri- ] ca de la bobina para poder
 acoplarlos correctamente. En la figura 2.5 se muestran el frente (a) y
 el perfil del dise˜ no 3D (b), y una foto del porta-muesntras impreso y
 con la bobina montada (c). Todas las dimensiones involucradas en la
 fabricaci´ on de las dis- tintas partes del porta muestras, se
 realizaron considerando las dimensiones requeridas para que no
-interfieran con el arreglo ´ optico. Figura 2.5:Porta-muestras dise˜
-nado e impreso en 3D. (a)- Vista frontal del modelo. (b)- Vista de
+interfieran con el arreglo ´ optico. [ Figura 2.5:Porta-muestras dise˜
+nado e impreso en 3D. (a)- Vista frontal del modelo. (b)- Vista ] de
 perfil. (c)- Foto del resultado final con la bobina montada Amplificador
 de potencia Para generar los pulsos de campo magn´ etico es necesario
 construir un circuito el´ ectrico capaz de amplificar la se˜ nal
 proveniente del generador de ondas empleado, cuya limitaci´ on en
 corriente impide alimentar la bobina de forma directa. Para ello, se
 dise˜ n´ o un amplificador de potencia clase D, basado en una
-configuraci´ on de puente H utilizando MOSFETs
-(Metal-Oxide-Semiconductor Field-Effect Transistor) [73], los cuales
+configuraci´ on de puente [ H utilizando MOSFETs
+(Metal-Oxide-Semiconductor Field-Effect Transistor) [73], los ] cuales
 act´ uan como interruptores para conmutar la corriente de una fuente de
 alimen- taci´ on externa hacia la bobina. En la figura 2.6 se muestra un
 esquema de este circuito, que permite la generaci´ on de pulsos
@@ -1127,16 +1137,16 @@ bobina (tc) del circuito RL establecido. La diferencia de potencialV b
 sobra la bobina con resistencia internaR i, en un circuito con
 resistencia totalR T en el cual se aplica un pulso cuadrado de amplitudV
 cc, se obtiene de la ley de voltaje Vb = (Vcc −V 0)exp −t tc  +V 0,(2.8)
-dondeV 0 =V cc Ri/RT [72]. Midiendo las tres diferencias de potencial:V
-cc,V 0 yV b, en el tiempot, se determin´ otc mediante un ajuste lineal
-como ln  Vb −V 0 Vcc −V 0  =− t tc (2.9) 2.3. Medidas de velocidad de
-las PDM y calibra- ci´ on de campo magn´ etico Las escalas de
-velocidades de evoluci´ on las PDMs pueden ser muy altas para anali-
+[ dondeV 0 =V cc Ri/RT [72]. Midiendo las tres diferencias de
+potencial:V cc,V 0 yV b, en ] el tiempot, se determin´ otc mediante un
+ajuste lineal como ln  Vb −V 0 Vcc −V 0  =− t tc (2.9) 2.3. Medidas de
+velocidad de las PDM y calibra- ci´ on de campo magn´ etico Las escalas
+de velocidades de evoluci´ on las PDMs pueden ser muy altas para anali-
 zarlas en tiempo real. Sin embargo, el hecho de que la relaci´ on
 entreVyHes altamente
 
-26Metodolog ´ ıa no lineal permite estudiar la din´ amica en un r´
-egimen cuasi-est´ atico. Dado que la for- ma de los dominios permanece
+26Metodolog ´ ıa [ no lineal permite estudiar la din´ amica en un r´
+egimen cuasi-est´ atico. Dado que la for- ] ma de los dominios permanece
 atrapada en un estado metaestable del cual no puede escapar en escalas
 de tiempo experimentales, es posible obtener im´ agenes de los do-
 minios antes y despu´ es de aplicar un pulso de campo, pudiendo asumir
@@ -1156,21 +1166,21 @@ las muestra, aplicando pulsos de 50 ms, es del orden de 16 mT [9]. Luego
 de saturar la muestra, para nuclear un dominio se aplica un pulso en el
 sentido opuesto al de saturaci´ on pero de menor duraci´ on. En todas
 las muestras estudiadas se aplicaron pulsos de nucleaci´ on con
-distintas duraciones, entre 5 ms, para la muestra conp Ir = 3 mTorr, y
-200 ms para la muestra conp Ir = 25.5 mTorr. A continuaci´ on, para
+distintas duraciones, entre [ 5 ms, para la muestra conp Ir = 3 mTorr, y
+200 ms para la muestra conp Ir = 25.5 ] mTorr. A continuaci´ on, para
 crecer la PDM se aplican pulsos de amplitud constante H0 y duraci´ onτ,
 recopilando las imagenes entre cada uno, es decir, con campo nulo. En la
 figura 2.7 se muestra un esquema del m´ etodo utilizado para crecer los
 dominios. La velocidad de crecimiento (V) se obtuvo a partir de un
 ajuste realizado para el radio medio de avance del dominio (ρ) en funci´
 on del tiempo acumuladot N luego de cada pulso. La relaci´ on del ajuste
-es de la forma ρ(t) =ρ 0 +V·t,(2.10) dondeρ 0 es el radio medio parat N
-= 0. El valor de ¯ρse determin´ o como el valor medio de la distancia
-entre cada punto del contorno de la imagen binarizada del dominio y la
-posici´ on del centroide del m´ ısmo. El campo magn´ etico efectivo
-sobre cada muestra se determin´ o utilizando las me- didas de velocidad,
-relacionandolas con la ecuacion 1.9 para el r´ egimen deceep, que
-establece una relaci´ on univoca entre ambos: µ0H= (β−ln(V)) −4 α
+es de la forma [ ρ(t) =ρ 0 +V·t,(2.10) ] dondeρ 0 es el radio medio
+parat N = 0. El valor de ¯ρse determin´ o como el valor medio de la
+distancia entre cada punto del contorno de la imagen binarizada del
+dominio y la posici´ on del centroide del m´ ısmo. El campo magn´ etico
+efectivo sobre cada muestra se determin´ o utilizando las me- didas de
+velocidad, relacionandolas con la ecuacion 1.9 para el r´ egimen deceep,
+que establece una relaci´ on univoca entre ambos: µ0H= (β−ln(V)) −4 α
 ,(2.11) empleando los valores deαyβde la referencia [9].
 
 2.3 Medidas de velocidad de las PDM y calibraci´ on de campo magn´
@@ -1222,20 +1232,20 @@ una buena correspondencia entre ellos. Posteriormente, se obtuvieron las
 coordenadas de todos los p´ ıxeles del contorno, lo que permiti´ o
 calcular la distancia radialδentre el centroide y cada punto del
 contorno. Este conjunto de distancias proporcion´ o la base estad´
-ıstica necesaria para determinar la escala. Figura 3.1:(a)- Imagen
-obtenida con el microscopio de un agujero de la grilla de TEM. (b)-
+ıstica necesaria para determinar la escala. [ Figura 3.1:(a)- Imagen
+obtenida con el microscopio de un agujero de la grilla de TEM. (b)- ]
 Resultado del proceso de binarizaci´ on de la imagen del agujero. (c)-
 Contorno (curva verde) y centroide (cruz roja) del agujero obtenidos
 desde la imagen binarizada. A trav´ es de un histograma se obtuvo el
 radio medio¯δen px de los circulos, el cual se relacion´ o finalmente
 con el radio de la grilla enµm. En la figura 3.2 se muestra el
 histograma junto al ajuste gaussiano realizado. Se determin´ o que el
-radio contiene ¯δ= 333±1 px con una desviaci´ on estandarσ= 8 px.
-Tomando el cociente entre los radios enµm y px, se obtuvo una escalaR e
-= 0.075±0.002µm/px. Figura 3.2:Histograma de los radios (δ) junto con el
-ajuste gaussiano (curva roja) para determinar el valor medio ( ¯δ). Si
-bien podr´ ıa calcularse el error espacial con la m´ ınima unidad
-asocaiada a la escala
+radio contiene [ ¯δ= 333±1 px con una desviaci´ on estandarσ= 8 px.
+Tomando el cociente entre los ] [ radios enµm y px, se obtuvo una
+escalaR e = 0.075±0.002µm/px. ] Figura 3.2:Histograma de los radios (δ)
+junto con el ajuste gaussiano (curva roja) para determinar el valor
+medio ( ¯δ). Si bien podr´ ıa calcularse el error espacial con la m´
+ınima unidad asocaiada a la escala
 
 3.1 Escala y resoluci´ on espacial31 espacial, es decir un pixel
 (0.075µm), esta relaci´ on no necesariamente denota el efecto de
@@ -1244,12 +1254,12 @@ num´ erica de la lente objetivo (AN). Por lo tanto, es necesario
 calcular el valor de minima resoluci´ on entre dos objetos por medio del
 criterio de Rayleigh [75]. Este criterio establece que dos objetos
 pueden resolverse si su separaci´ on es mayor aRRay = λ 2(AN) ,
-dondeAN=0.25 yλ= (0.63±0.03)µm, obteniendoR Ray ∼1µm. Cada pixel
-representa aproximada- mente el 10 % de lo que puede resolver el
+dondeAN=0.25 [ yλ= (0.63±0.03)µm, obteniendoR Ray ∼1µm. Cada pixel
+representa aproximada- ] mente el 10 % de lo que puede resolver el
 microsc´ opio con el criterio de Rayleigh. Por lo tanto, se decidi´ o
-utilizar el cambio de escala entre pixeles y tama˜ nos m´ etricos por
+utilizar el cambio de escala entre pixeles y tama˜ nos m´ etricos por [
 medio del factorR e = 0.075µm/px, y el error espacial por medio del
-factor obtenido de la expresi´ on de RayleightRRay= 1µm. 3.1.1.
+factor obtenido ] de la expresi´ on de RayleightRRay= 1µm. 3.1.1.
 Simulaci´ on de las bobinas Se determin´ o la geometr´ ıa ´ optima de la
 bobina a trav´ es del modelo de estas c´ omo un sistema de espiras, cuyo
 campo fue calculado mediante la ley de Biot-Savart. En la figura 3.3 se
@@ -1285,24 +1295,25 @@ modelo adoptado, el centro de la muestra se encuentra enx= 0 y a una
 distancia de 1.7 mm por encima de la bobina. El primer an´ alisis se
 centr´ o en la influencia dea0. En la figura 3.4 se presenta el
 comportamiento deHa lo largo de los ejeszyxal modificar el radio
-interno, para una geometr´ ıa conNx = 12 yN z = 8. En la figura 3.4-(a)
-se distinguen tres curvas del campo en funci´ on dez, correspondientes
-a:a 0 = 1 mm (curva azul), 2.5 mm (curva p´ urpura) y 4 mm (curva roja),
-donde la l´ ınea de puntos se˜ nala la ubicaci´ on de la superficie de
-la muestra, donde los valores de campo sonH c. Por otra parte, la figura
-3.4-(b) muestra la dependencia conxsobre dicho plano, dondeH c es el
-campo en x= 0. Se observa que, adem´ as de la variaci´ on en la
-amplitud, el campo experimenta un cambio de concavidad en la zona
+interno, para [ una geometr´ ıa conNx = 12 yN z = 8. En la figura
+3.4-(a) se distinguen tres curvas del ] campo en funci´ on dez,
+correspondientes a:a 0 = 1 mm (curva azul), 2.5 mm (curva p´ urpura) y 4
+mm (curva roja), donde la l´ ınea de puntos se˜ nala la ubicaci´ on de
+la superficie de la muestra, donde los valores de campo sonH c. Por otra
+parte, la figura 3.4-(b) muestra la dependencia conxsobre dicho plano,
+dondeH c es el campo en x= 0. Se observa que, adem´ as de la variaci´ on
+en la amplitud, el campo experimenta un cambio de concavidad en la zona
 central a medida quea 0 incrementa, de manera que el campo m´ aximo deja
-de estar enx= 0 y se desplaza simetricamente hacia los extremos. Figura
-3.4:Intensidad de campo magn´ eticoHpara una configuraci´ on deNx = 12
-yN z = 8. (a)- Perfil del campo en funci´ on dez. La l´ ınea de puntos
-indica la posici´ on de la muestra a 1.7 mm del borde de la bobina. (b)-
-Perfil del campo en funci´ on dexevaluado sobre el plano de la muestra.
-En ambos casos se comparan los radiosa 0 = 1 mm (curva azul), 2.5 mm
-(curva p´ urpura) y 4 mm (curva roja). Ambos gr´ aficos evidencian que
-el campo sobre la muestra aumenta inicialmente cona 0 hasta alcanzar un
-valor m´ aximo, para luego decrecer en radios mayores. De
+de estar enx= 0 y se desplaza simetricamente hacia los extremos. [
+Figura 3.4:Intensidad de campo magn´ eticoHpara una configuraci´ on deNx
+= 12 yN z = 8. ] (a)- Perfil del campo en funci´ on dez. La l´ ınea de
+puntos indica la posici´ on de la muestra a 1.7 mm del borde de la
+bobina. (b)- Perfil del campo en funci´ on dexevaluado sobre el plano de
+la muestra. En ambos casos se comparan los radiosa 0 = 1 mm (curva
+azul), 2.5 mm (curva p´ urpura) y 4 mm (curva roja). Ambos gr´ aficos
+evidencian que el campo sobre la muestra aumenta inicialmente cona 0
+hasta alcanzar un valor m´ aximo, para luego decrecer en radios mayores.
+De
 
 3.1 Escala y resoluci´ on espacial33 estas observaciones se concluy´ o
 que la configuraci´ on ´ optima se encuentra en un punto intermedio, al
@@ -1310,36 +1321,37 @@ rededor del m´ aximo deHc, donde la intensidad sea adecuada y el perfil
 de campo sea lo suficientemente plano. Cabe se˜ nalar que, si bien se
 representen las curvas mediante l´ ıneas continuas, los valores son
 discretos. La figura 3.5 muestra curvas t´ ıpicas deH c,Ly ∆, para una
-configuraciones con valores fijos deN x = 12,N z = 8, en funci´ on dea0.
-En la figura 3.5-(a) se aprecia queHc alcanza un m´ aximo local cercano
-aa0=2 mm. Esto se debe al comportamiento mensio- nado en el apartado
-anterior. Simult´ aneamente, la inductancia presenta un crecimiento
-aproximadamente lineal (figura 3.5-(c)) con una pendiente de 27.4µH/mm,
-indicando que la configuraci´ on ´ optima requiere el radio m´ as bajo
-posible. Las fluctuaciones que rompen la monoton´ ıa, se deben a errores
-de calculo debido a la divergencia del campo en las proximidades de la
-espira. Si bien es posible mejorar los calculos minimizando la
-discretizaci´ on espacial, esto requer´ ıria timpos de computo que
-exeden a este trabajo. Esto present´ o un compromiso entre la fidelidad
-del modelo y la eficiencia de c´ alculo. Por lo tanto se decidi´ o
-restringir la zona de evaluaci´ on, evitando las regiones internas de
-las espiras de di´ ametro finitod= 0.25 mm, y empleando un paso de
-integraci´ on con tiempos de computo relativamente cortos. Por otra
-parte, ∆ desciende hasta un valor m´ ınimo para luego estabilizarse tras
-un breve incremento (figura 3.5-(b)). Esta tendencia se mantuvo en todas
-las configuraciones evaluadas, delimitando un rango de validez acotado
-para la tolerancia (franjas grises en los gr´ aficos), ubicado siempre
-en las proximidades del m´ aximo deH c. Espec´ ıficamente, el intervalo
-donde ∆<1 se sit´ ua entrea0 = 2.3 mm y 2.7 mm, con valores deH c entre
-21.0 mT y 20.5 mT, respectivamente. Adem´ as, en estas condiciones se
-hall´ oL= 54µH. Figura 3.5:(a)- Intensidad de campo magn´ eticoµ0Hc,
-inductanciaL(b), y tolerancia ∆ (c) en funci´ on dea0 paraN x = 12 yN z
-= 8. Las franjas grises representan el rango de tolerancia permitido.
+configuraciones con [ valores fijos deN x = 12,N z = 8, en funci´ on
+dea0. En la figura 3.5-(a) se aprecia queHc ] [ alcanza un m´ aximo
+local cercano aa0=2 mm. Esto se debe al comportamiento mensio- ] nado en
+el apartado anterior. Simult´ aneamente, la inductancia presenta un
+crecimiento [ aproximadamente lineal (figura 3.5-(c)) con una pendiente
+de 27.4µH/mm, indicando ] que la configuraci´ on ´ optima requiere el
+radio m´ as bajo posible. Las fluctuaciones que rompen la monoton´ ıa,
+se deben a errores de calculo debido a la divergencia del campo en las
+proximidades de la espira. Si bien es posible mejorar los calculos
+minimizando la discretizaci´ on espacial, esto requer´ ıria timpos de
+computo que exeden a este trabajo. Esto present´ o un compromiso entre
+la fidelidad del modelo y la eficiencia de c´ alculo. Por lo tanto se
+decidi´ o restringir la zona de evaluaci´ on, evitando las regiones
+internas de las espiras de di´ ametro finitod= 0.25 mm, y empleando un
+paso de integraci´ on con tiempos de computo relativamente cortos. Por
+otra parte, ∆ desciende hasta un valor m´ ınimo para luego estabilizarse
+tras un breve incremento (figura 3.5-(b)). Esta tendencia se mantuvo en
+todas las configuraciones evaluadas, delimitando un rango de validez
+acotado para la tolerancia (franjas grises en los gr´ aficos), ubicado
+siempre en las proximidades del m´ aximo deH c. Espec´ ıficamente, el
+intervalo donde ∆<1 se sit´ ua entrea0 = 2.3 mm y 2.7 mm, con valores
+deH c entre 21.0 mT y 20.5 mT, respectivamente. Adem´ as, en estas
+condiciones se hall´ oL= 54µH. Figura 3.5:(a)- Intensidad de campo magn´
+eticoµ0Hc, inductanciaL(b), y tolerancia ∆ (c) [ en funci´ on dea0 paraN
+x = 12 yN z = 8. Las franjas grises representan el rango de tolerancia ]
+permitido.
 
 34Resultados El segundo an´ alisis se centr´ o en las variaciones
-respecto aN x. En la figura 3.6, para el casoN z = 8 ya 0 = 2.3 mm, el
-campoH c crece de forma mon´ otona con el aumento deN x (figura
-3.6-(a)). En cuanto a la inductancia, en la figura 3.6-(b), sigue una
+respecto aN x. En la figura 3.6, [ para el casoN z = 8 ya 0 = 2.3 mm, el
+campoH c crece de forma mon´ otona con el ] [ aumento deN x (figura
+3.6-(a)). En cuanto a la inductancia, en la figura 3.6-(b), sigue ] una
 tendencia creciente conN x. De esta manera, la opci´ on ´ optima es el
 valor m´ ınimo deN x que garantice ∆<1.Finalmente, se observa que ∆
 disminuye hasta un m´ ınimo y se vuelve asint´ otica a partir de cierto
@@ -1349,52 +1361,52 @@ homogeneidad. En este escenario, las condiciones de homogeneidad se
 cumplen para cualquierN x >10. Si bien la morfolog´ ıa de las curvas
 analizadas es persistente, el valor de la asintota de ∆ depende de la
 configuraci´ on, pudiendo quedar afuera del criterio de homogeneidad. En
-esta configuraci´ on resulta la configuraci´ on ´ optima enNx = 12, con
-un campoH c = 21 mT yL= 54µH. Figura 3.6:Intensidad de campo magn´
-eticoH c (a), inductancia (L), y tolerancia ∆ (b) en funci´ on deNx
+esta configuraci´ on resulta la configuraci´ on ´ optima enNx = 12, [
+con un campoH c = 21 mT yL= 54µH. ] Figura 3.6:Intensidad de campo magn´
+eticoH c (a), inductancia (L), y tolerancia ∆ (b) en [ funci´ on deNx
 paraN z = 8 ya 0 = 2.3 mm. Las franjas grises representan las zonas de
-tolerancia permitido. Por ´ ultimo, se estudi´ o la dependencia de las
-variables en funci´ on deNz paraN x ya 0 fijos. En la figura 3.7 se
-muestran los resultados paraN z = 8 ya 0 = 2.3 mm. Nuevamente,H c exhibe
-un crecimiento mon´ otono (figura 3.7-(a)) frente a un aumento deN z.
-Para n´ umeros por debajo deN x =N z =16 vueltas, los cambios producidos
-enH c son comparables, mientras que para n´ umeros mayores, los efectos
-deN x son el doble de los efectos deN z. Las variaciones deLmostradas en
-el gr´ afico de la figura 3.7-(b) presentan un comportamiento creciente,
-al igual que las dependencias conN z. Sin embargo, el comportamiento es
-similar al deH c, con un aumento comparable para Nz bajos, y con una
-atenuacion del doble respecto deN x paraN z altos. Finalmente, el
-comportamiento de ∆ en funci´ on deNz es similar al deN x (figura
-3.7-(c)), aunque con una concavidad mucho m´ as pronunciada alrededor
-del m´ ınimo, exhibiendo tambi´ en un
+tolerancia ] permitido. Por ´ ultimo, se estudi´ o la dependencia de las
+variables en funci´ on deNz paraN x [ ya 0 fijos. En la figura 3.7 se
+muestran los resultados paraN z = 8 ya 0 = 2.3 mm. ] Nuevamente,H c
+exhibe un crecimiento mon´ otono (figura 3.7-(a)) frente a un aumento [
+deN z. Para n´ umeros por debajo deN x =N z =16 vueltas, los cambios
+producidos ] enH c son comparables, mientras que para n´ umeros mayores,
+los efectos deN x son el doble de los efectos deN z. Las variaciones
+deLmostradas en el gr´ afico de la figura 3.7-(b) presentan un
+comportamiento creciente, al igual que las dependencias conN z. Sin
+embargo, el comportamiento es similar al deH c, con un aumento
+comparable para Nz bajos, y con una atenuacion del doble respecto deN x
+paraN z altos. Finalmente, el comportamiento de ∆ en funci´ on deNz es
+similar al deN x (figura 3.7-(c)), aunque con una concavidad mucho m´ as
+pronunciada alrededor del m´ ınimo, exhibiendo tambi´ en un
 
 3.2 Optimizaci´ on de contraste35 l´ ımite en la mejora de la
-homogeneidad del campo. En esta configuraci´ on, el rango de tolerancias
-v´ alidas est´ a delimitado a los valoresNz = 6 yN z = 8. A pesar de que
-la inductancia m´ ınima ocurre enN z = 6, el campo resultante (H c =
-17.2 mT) no cumple con el l´ ımite establecido de 20 mT. Por lo tanto,
-el valor ´ optimo esNz = 8 con Hc = 21.0 mT. En conclusi´ on, el an´
-alisis de las configuraciones permiti´ o comprender la dependencia entre
-la geometr´ ıa de la bobina y la respuesta magn´ etica del sistema. Tras
-evaluar las tendencias observadas en la dependencia de las tres
-variables, se determin´ o que la geometr´ ıa paraNx = 12,N z = 8 ya 0 =
-2.3 mm presenta valores ´ optimos para los requerimientos del
-experimento. Esta configuraci´ on garantiza un valor te´ oricoH∼21.0 mT
-a una distancia estimada de 1 mm sobre la bobina, con una variaci´ on de
-∆ = 0.75 % entre el centro y su borde. Asimismo, la elecci´ on de estos
-par´ ametros predice una inductancia m´ ınimaL= 54µH, la cual es
-fundamental para reducir la constante de tiempo del circuito y permitir
-una respuesta transitoria veloz durante las aplicaciones de campo.
-Figura 3.7:Intensidad de campo magn´ eticoHc (a), inductancia (L), y
-tolerancia ∆ (b) en en funci´ on deNz paraN x = 12 ya 0 = 2.3 mm. Las
-franjas grises representan el rango de tolerancia permitido. 3.2.
-Optimizaci´ on de contraste Utilizando la definici´ on deC(ecuaci´ on
-2.1) presentada en la secci´ on 2.2.1, la cual depende de las
-intensidadesI 1 (zona clara) eI 2 (zona oscura) asociadas a dominios con
-diferentes direcciones de magnetizaci´ on, se realiz´ o una optimizaci´
-on del contraste MO de las im´ agenes de los dominios. En la figura
-3.8-(a) se muestra la imagen de un dominio donde se generan zonas de
-diferente intensidad. Los valoresI 1 eI 2 se determinaron tomando c´
+homogeneidad del campo. En esta configuraci´ on, el rango de [
+tolerancias v´ alidas est´ a delimitado a los valoresNz = 6 yN z = 8. A
+pesar de que ] [ la inductancia m´ ınima ocurre enN z = 6, el campo
+resultante (H c = 17.2 mT) no ] cumple con el l´ ımite establecido de 20
+mT. Por lo tanto, el valor ´ optimo esNz = 8 con Hc = 21.0 mT. En
+conclusi´ on, el an´ alisis de las configuraciones permiti´ o comprender
+la dependencia entre la geometr´ ıa de la bobina y la respuesta magn´
+etica del sistema. Tras evaluar las tendencias observadas en la
+dependencia de las tres variables, se determin´ o que [ la geometr´ ıa
+paraNx = 12,N z = 8 ya 0 = 2.3 mm presenta valores ´ optimos para los ]
+requerimientos del experimento. Esta configuraci´ on garantiza un valor
+te´ oricoH∼21.0 mT a una distancia estimada de 1 mm sobre la bobina, con
+una variaci´ on de ∆ = 0.75 % entre el centro y su borde. Asimismo, la
+elecci´ on de estos par´ ametros predice una inductancia m´ ınimaL=
+54µH, la cual es fundamental para reducir la constante de tiempo del
+circuito y permitir una respuesta transitoria veloz durante las
+aplicaciones de campo. Figura 3.7:Intensidad de campo magn´ eticoHc (a),
+inductancia (L), y tolerancia ∆ (b) en en [ funci´ on deNz paraN x = 12
+ya 0 = 2.3 mm. Las franjas grises representan el rango de tolerancia ]
+permitido. 3.2. Optimizaci´ on de contraste Utilizando la definici´ on
+deC(ecuaci´ on 2.1) presentada en la secci´ on 2.2.1, la cual depende de
+las intensidadesI 1 (zona clara) eI 2 (zona oscura) asociadas a dominios
+con diferentes direcciones de magnetizaci´ on, se realiz´ o una
+optimizaci´ on del contraste MO de las im´ agenes de los dominios. En la
+figura 3.8-(a) se muestra la imagen de un dominio donde se generan zonas
+de diferente intensidad. Los valoresI 1 eI 2 se determinaron tomando c´
 ırculos de igual
 
 36Resultados ´ area, tal como se observa en dicha figura. A partir de
@@ -1441,91 +1453,91 @@ dominios magn´ eticos. Este proceso se realiz´ o utilizando valores
 fijos de tiempos de exposici´ on (te), con la gananciaG= 0 y el brillo
 γ= 1. Dependencia con el ´ angulo entre polarizador y analizador El an´
 alisis del contraste en funci´ on de ∆θse realiz´ o fijandoθA = 10o y
-variandoθ P . En la figura 3.9-(a) se muestra la dependencia deCcon
-∆θ(donde las franjas represen- tan el error), y en la figura 3.9-(b) el
-gr´ afico del error relativo, ambos paraiLED = 0.30 A yt e = 100 ms. Se
-observa que para un ´ angulo ∆θ= 87 o se obtiene un contraste cercano a
-0.02, disminuyendo este para ´ angulos menores o mayores. Asimismo, el
-error relativo (εr) presenta su valor m´ ınimo en este mismo ´ angulo.
-De este an´ alisis se deduce que la imagen alcanza su m´ axima nitidez
-con una baja dispersi´ on deC, resultando en un par´ ametro optimizado
-de ∆θ= (87±1) o. Figura 3.9:(a)- Contraste en funci´ on del ´ angulo ∆θ,
-conte = 100 ms,i LED = 0.3 A,G= 0 yγ= 1. Las franjas de color
-representan el error de las medidas. (b)- Error relativo deCen funci´ on
-de ∆θcorrespondiente a las medidas en (a).
+variandoθ P . [ En la figura 3.9-(a) se muestra la dependencia deCcon
+∆θ(donde las franjas represen- ] [ tan el error), y en la figura 3.9-(b)
+el gr´ afico del error relativo, ambos paraiLED = 0.30 ] [ A yt e = 100
+ms. Se observa que para un ´ angulo ∆θ= 87 o se obtiene un contraste ]
+cercano a 0.02, disminuyendo este para ´ angulos menores o mayores.
+Asimismo, el error relativo (εr) presenta su valor m´ ınimo en este
+mismo ´ angulo. De este an´ alisis se deduce que la imagen alcanza su m´
+axima nitidez con una baja dispersi´ on deC, resultando en un par´
+ametro optimizado de ∆θ= (87±1) o. [ Figura 3.9:(a)- Contraste en funci´
+on del ´ angulo ∆θ, conte = 100 ms,i LED = 0.3 A,G= 0 ] [ yγ= 1. Las
+franjas de color representan el error de las medidas. (b)- Error
+relativo deCen ] funci´ on de ∆θcorrespondiente a las medidas en (a).
 
 38Resultados Intensidad de corriente de la alimentaci´ on del LED En la
 figura 3.10 se muestran las variaciones deCcon la corrientei LED para
-∆θ= 87o yt e = 100 ms. El contraste alcanza un m´ aximo de 0.012 a 0.70
-A (figura 3.10-(a)). Dado que el LED empleado tiene una tolerancia de
-corriente de 0.7 A, es conveniente trabajar con valores menores a este
-l´ ımite. Por otro lado, el menor error relativo se localiza en valores
-intermedios dei LED, espec´ ıficamente para 0.5 A en el caso mostrado en
-la figura 3.10-(b). Figura 3.10:(a)- Contraste en funci´ on dei LED, con
-sus franjas de error, parat e = 100 ms, ∆θ= 87 o,G= 0 yγ= 1. (b)- Error
-relativo deCen funci´ on de ∆θcorrespondiente a las medidas en (a).
-3.2.2. Par´ ametros de la c´ amara La optimizaci´ on de la c´ amara se
-realiz´ o utilizando los par´ ametros ´ opticos que pro- ducen el mayor
-contraste, variando los par´ ametros asociados a las im´ agenes tomadas
-por la c´ amara: Ganancia, Brillo y Tiempo de exposici´ on. Ganancia En
-las figuras 3.11-(a) y (b) se observa queCse mantiene constante hasta un
-valor cr´ ıtico dependiente dete, a partir del cual cae abruptamente.
-Mientras, el error relativo se mantiene m´ ınimo y constante por debajo
-de dicho valor. Parate = 100 ms, la ganancia cr´ ıtica se sit´ ua enG=
-12. Aumentar la ganancia promueve la amplificaci´ on de ruidos, tales
-como el ruido t´ ermico, asociado a los efectos de la temperatura en la
-electr´ onica del sensor CMOS, o el ruido de Poisson (shot noise),
-vinculado al origen estoc´ astico de la llegada de fotones [76, 77]. La
-ganancia en exceso produce granularidad, deteriorando la calidad de
-imagen y el contraste. Por tanto, aprovechando la estabilidad observada,
-conviene
+∆θ= [ 87o yt e = 100 ms. El contraste alcanza un m´ aximo de 0.012 a
+0.70 A (figura 3.10-(a)). ] Dado que el LED empleado tiene una
+tolerancia de corriente de 0.7 A, es conveniente trabajar con valores
+menores a este l´ ımite. Por otro lado, el menor error relativo se
+localiza en valores intermedios dei LED, espec´ ıficamente para 0.5 A en
+el caso mostrado en la figura 3.10-(b). [ Figura 3.10:(a)- Contraste en
+funci´ on dei LED, con sus franjas de error, parat e = 100 ms, ] [ ∆θ=
+87 o,G= 0 yγ= 1. (b)- Error relativo deCen funci´ on de
+∆θcorrespondiente a las ] medidas en (a). 3.2.2. Par´ ametros de la c´
+amara La optimizaci´ on de la c´ amara se realiz´ o utilizando los par´
+ametros ´ opticos que pro- ducen el mayor contraste, variando los par´
+ametros asociados a las im´ agenes tomadas por la c´ amara: Ganancia,
+Brillo y Tiempo de exposici´ on. Ganancia En las figuras 3.11-(a) y (b)
+se observa queCse mantiene constante hasta un valor cr´ ıtico
+dependiente dete, a partir del cual cae abruptamente. Mientras, el error
+relativo se mantiene m´ ınimo y constante por debajo de dicho valor.
+Parate = 100 ms, la ganancia cr´ ıtica se sit´ ua enG= 12. Aumentar la
+ganancia promueve la amplificaci´ on de ruidos, tales como el ruido t´
+ermico, asociado a los efectos de la temperatura en la electr´ onica del
+sensor CMOS, o el ruido de Poisson (shot noise), vinculado al origen
+estoc´ astico de la llegada de fotones [76, 77]. La ganancia en exceso
+produce granularidad, deteriorando la calidad de imagen y el contraste.
+Por tanto, aprovechando la estabilidad observada, conviene
 
 3.2 Optimizaci´ on de contraste39 utilizar valores deGpeque˜ nos debajo
 del punto cr´ ıtico. Los efectos aleatorios de estos ruidos son
 acumulativos y su impacto es notorio al aumentar el tiempo de exposici´
-on. Figura 3.11:(a) Contraste en funci´ on deGcon sus barras de error,
-parate = 100 ms, ∆θ= 87 o, iLED = 0.5 A yγ= 1. (b)- Error relativo en
-funci´ on deGcorrespondientes a el contraste en (a). Brillo En la figura
-3.12 se presentan los resultados en funci´ on deγempleandot e = 100 ms y
-una ganancia deG= 10 (dentro de la zona estable mensionada en el
-apartado anterior). Como se observa en la figura 3.12-(a),Cpresenta un
-m´ aximo cercano a 0.11 y luego disminuye cuandoγincrementa. En
+on. [ Figura 3.11:(a) Contraste en funci´ on deGcon sus barras de error,
+parate = 100 ms, ∆θ= 87 o, ] [ iLED = 0.5 A yγ= 1. (b)- Error relativo
+en funci´ on deGcorrespondientes a el contraste en (a). ] Brillo En la
+figura 3.12 se presentan los resultados en funci´ on deγempleandot e =
+100 ms y una ganancia deG= 10 (dentro de la zona estable mensionada en
+el apartado anterior). Como se observa en la figura 3.12-(a),Cpresenta
+un m´ aximo cercano a 0.11 y luego disminuye cuandoγincrementa. En
 contraparte, el error relativo incrementa con el aumento deγ(figura
-3.12-(b)). Figura 3.12:(a)- Contraste en funci´ on del brilloγcon sus
-franjas de error, parat e = 100 ms, G= 10, ∆θ= 87 o ei LED = 0.5 A. (b)-
-Error relativo deCen funci´ on deγcorrespondientes a las medidas en (a).
-Se determin´ o que la intensidad se relaciona conγmediante una ley de
-potencias
+3.12-(b)). [ Figura 3.12:(a)- Contraste en funci´ on del brilloγcon sus
+franjas de error, parat e = 100 ms, ] [ G= 10, ∆θ= 87 o ei LED = 0.5 A.
+(b)- Error relativo deCen funci´ on deγcorrespondientes a ] las medidas
+en (a). Se determin´ o que la intensidad se relaciona conγmediante una
+ley de potencias
 
-40Resultados [67] de la forma (I ref )1/γ, dondeI ref =I(γ= 1). El
-contraste calculado bajo esta relaci´ on es Cγ =A (I2,ref )1/γ −(I 1,ref
-)1/γ (I2,ref )1/γ + (I1,ref )1/γ ,(3.1) dondeAes una constante que
-contempla las fluctuaciones del sistema. La validez de esta ley se
-verific´ o y los resultados se muestran en la figura 3.13, donde se
-grafican los valores medidos deCfrente aC γ parat e = 50, 100 y 200 ms
-con sus valores de ganancia optimizados,G= 16,G= 10 tG= 1
-respectivamente. Mediante un ajuste lineal se obtuvoA= 1.15. La
+40Resultados [ [67] de la forma (I ref )1/γ, dondeI ref =I(γ= 1). El
+contraste calculado bajo esta ] relaci´ on es [ Cγ =A (I2,ref )1/γ −(I
+1,ref )1/γ ] [ (I2,ref )1/γ + (I1,ref )1/γ ,(3.1) ] dondeAes una
+constante que contempla las fluctuaciones del sistema. La validez de
+esta ley se verific´ o y los resultados se muestran en la figura 3.13,
+donde se grafican los valores medidos deCfrente aC γ parat e = 50, 100 y
+200 ms con sus valores de ganancia [ optimizados,G= 16,G= 10 tG= 1
+respectivamente. Mediante un ajuste lineal se ] obtuvoA= 1.15. La
 independencia de esta transformaci´ on respecto at e muestra un
 comportamiento universal deCfrente a los cambios deγ, concluyendo que el
 brillo ´ optimo es independiente de los dem´ as par´ ametros. Figura
 3.13:Grafico del contraste medido (C) frente aC γ calculado como una
-funci´ on de potencia de 1/γ(Ecuaci´ on 3.1), para los tiempos de
-exposici´ ont e = 50, 100 y 200 ms, y los valores respectivos de
-gananciaG= 16,G= 10 yG= 1. Tiempo de exposici´ on El tiempo de exposici´
-onte determina la cantidad de fotones recolectados, condicio- nando la
-intensidad de cada p´ ıxel. Si la iluminaci´ on es uniforme,I1 eI 2
-aumentar´ an proporcionalmente cont e, ocasionando una disminuci´ on
-deC, lo cual se observa en la figura 3.14-(a). No obstante, en la figura
-3.14-(b) se observa que el error relativo disminuye al aumentart e,
-planteando un compromiso entre un contraste alto y una baja dispersi´
-on. Como conclusi´ on, los par´ ametros optimizados para la obtenci´ on
-de las mejores
+funci´ on de [ potencia de 1/γ(Ecuaci´ on 3.1), para los tiempos de
+exposici´ ont e = 50, 100 y 200 ms, y los ] [ valores respectivos de
+gananciaG= 16,G= 10 yG= 1. ] Tiempo de exposici´ on El tiempo de
+exposici´ onte determina la cantidad de fotones recolectados, condicio-
+nando la intensidad de cada p´ ıxel. Si la iluminaci´ on es uniforme,I1
+eI 2 aumentar´ an proporcionalmente cont e, ocasionando una disminuci´
+on deC, lo cual se observa en [ la figura 3.14-(a). No obstante, en la
+figura 3.14-(b) se observa que el error relativo ] disminuye al
+aumentart e, planteando un compromiso entre un contraste alto y una baja
+dispersi´ on. Como conclusi´ on, los par´ ametros optimizados para la
+obtenci´ on de las mejores
 
-3.3 Calibraci´ on experimental de la bobina41 condiciones de contraste
-son: ∆θ= 87 o,i LED = 0.5 A,t e = 100 ms,G <12 yγ= 0.2. De la
-implementaci´ on de estos valores resulta un contrasteC= 0.11±0.01
+3.3 Calibraci´ on experimental de la bobina41 [ condiciones de contraste
+son: ∆θ= 87 o,i LED = 0.5 A,t e = 100 ms,G <12 yγ= 0.2. ] De la
+implementaci´ on de estos valores resulta un contrasteC= 0.11±0.01 [
 Figura 3.14:(a) Contraste en funci´ on dete con ∆θ= 87 o,i LED = 0.3
-A,G= 0 yγ= 1. (b) Error relativo correspondiente. 3.3. Calibraci´ on
+A,G= 0 yγ= 1. (b) ] Error relativo correspondiente. 3.3. Calibraci´ on
 experimental de la bobina Para poder aplicar campos magn´ eticos
 dependientes del tiempo, es necesario realizar un an´ alisis de los
 tiempos del sistema y las posibles amplitudes del campoH. Para poder
@@ -1539,9 +1551,9 @@ previamente calibradas [9]. 3.3.1. Tiempo caracter´ ıstico del circuito
 Para determinar la respuesta temporal de la bobina, se calcularon los
 tiempos ca- racter´ ısticos en los que luego de aplicar pulsos cuadrados
 el sistema llegaba a un estado estacionario. La ley de voltaje sobre una
-bobina en un circuito DC puede escribirse como Vb(t) = (Vcc −V 0)e−t/tc
-+V 0,(3.2) siendoV cc la amplitud del voltaje aplicado,V 0 el voltaje
-asociado a la resistencia de la bobina,tel tiempo yt c el tiempo
+bobina en un circuito DC puede escribirse como [ Vb(t) = (Vcc −V
+0)e−t/tc +V 0,(3.2) ] siendoV cc la amplitud del voltaje aplicado,V 0 el
+voltaje asociado a la resistencia de la bobina,tel tiempo yt c el tiempo
 caracter´ ıstico [72]. En un circuitoRLcon resistencia totalR T , se
 puede determinar el valor de la inductancia comoL=t cRT , a
 
@@ -1552,22 +1564,22 @@ amplitudVcc = 10.0 V, junto al inducido sobre la bobina (Vb), conV 0 =
 de 0 V. Esto se debe a que la resistencia de la bobina (R i) es del
 orden de la resistencia de protecci´ on (Rp). Luego, en la figura
 3.15-(b) se muestra la linealizaci´ on de la relaci´ on del voltaje de
-la manera que se describe en la secci´ on 3.3, obteniendo un valor de tc
-= (12.8±0.5)µs. Dado que la resistencia total esR T =R p +R i =
-(7.4±0.1) Ω, se obtiene una inductanciaL= (60±5)µH. Al comparar el valor
-medido con el obtenido de las simulaciones, igual a 54µH, puede verse
-que es mayor. Esta diferencia se puede deber a varios factores: el
+la manera que se describe en la secci´ on 3.3, obteniendo un valor de [
+tc = (12.8±0.5)µs. Dado que la resistencia total esR T =R p +R i =
+(7.4±0.1) Ω, se ] obtiene una inductanciaL= (60±5)µH. Al comparar el
+valor medido con el obtenido de las simulaciones, igual a 54µH, puede
+verse que es mayor. Esta diferencia se puede deber a varios factores: el
 aumento de temperatura al aplicar un pulso de corrientes cercanas a 2 A,
 como la consideraci´ on de la bobina como un conjunto de espiras y no
 como un todo, subestimando efectos de concatenaci´ on y autoinductivos.
 Figura 3.15:(a)- Datos del osciloscopio de un pulso de duraci´ o 300 ms
 y amplitudVcc aplicado sobre la bobina (curva azul), junto a la
-diferencia de potencialV b establecida en ella (curva roja). Cuando se
+diferencia de potencialV b establecida en ella (curva roja). [ Cuando se
 alcanza el estado estacionario, la diverencia de potencial tiende aV 0 =
-2.4 V. (b)- Gr´ afico deln[(Vb −V 0)/(Vcc −V 0)] en funci´ on del tiempo
-sobre la bobina t. La curva negra corresponde al ajuste leneal realizado
-para obtener el tiempo caracter´ ısticot c. 3.3.2. Calibraci´ on del
-campo A trav´ es del protocolo descrito en la secci´ on 2.3.1, y
+2.4 V. (b)- ] Gr´ afico deln[(Vb −V 0)/(Vcc −V 0)] en funci´ on del
+tiempo sobre la bobina t. La curva negra corresponde al ajuste leneal
+realizado para obtener el tiempo caracter´ ısticot c. 3.3.2. Calibraci´
+on del campo A trav´ es del protocolo descrito en la secci´ on 2.3.1, y
 considerando la din´ amica de paredes de dominio en el r´ egimen
 decreep(ecuaci´ on 1.9), es posible determinar el campo magn´ etico
 efectivo a partir de las velocidades promedio medidas. A partir de la
@@ -1588,46 +1600,47 @@ determin´ o el radio medio (ρ) calculando la distancia de cada punto del
 contorno del dominio respecto a su centro de expansi´ on. La figura
 3.16-(b) exhibe los histogramas de las distribuciones de los radios
 obtenidos. Figura 3.16:(a) Superposici´ on de dominios magn´ eticos tipo
-burbuja tras la binarizaci´ on para la muestra conp Ir = 7.5 mTorr (H c
-= 137 Oe,τ= 9 ms). (b) Distribuci´ on estad´ ıstica de los radios (ρ)
-calculados para cada etapa del crecimiento. (c) Evoluci´ on del radio
-medio ¯ρen funci´ on del tiempo acumuladot N . El ajuste lineal (curva
-roja) presenta un error relativoε r = 0.005, validando la determinaci´
-on de la velocidad media de expansi´ on. Las variaciones observadas se
-atribuyen a las rugosidades intr´ ınsecas del r´ egimen decreep, las
-cuales, si bien no son objeto de estudio en esta tesis, resultan
-representa- tiva de este r´ egimen din´ amico. Se obtuvo un error estad´
-ıstico ∆ρ <1µm, el cual se
+burbuja tras la binarizaci´ on para [ la muestra conp Ir = 7.5 mTorr (H
+c = 137 Oe,τ= 9 ms). (b) Distribuci´ on estad´ ıstica de los ] radios
+(ρ) calculados para cada etapa del crecimiento. (c) Evoluci´ on del
+radio medio ¯ρen funci´ on del tiempo acumuladot N . El ajuste lineal
+(curva roja) presenta un error relativoε r = 0.005, validando la
+determinaci´ on de la velocidad media de expansi´ on. Las variaciones
+observadas se atribuyen a las rugosidades intr´ ınsecas del r´ egimen
+decreep, las cuales, si bien no son objeto de estudio en esta tesis,
+resultan representa- tiva de este r´ egimen din´ amico. Se obtuvo un
+error estad´ ıstico ∆ρ <1µm, el cual se
 
-44Resultados corresponde con un error relativoε r = 0.01, confirmando
-que los radios est´ an correc- tamente definidos. Finalmente, la figura
-3.16-(c) muestra la dependencia entreρyt N , evidenciando una alta
-linealidad que permite determinar la velocidad de crecimiento mediante
-un ajuste lineal. El protocolo de medida deVse repiti´ o para distintos
-valores de corriente aplicada. En la figura 3.17-(a) se grafican los
-valores de ln(V) en funci´ on dei−1/4 para la muestra crecida ap Ir = 3
-mTorr. Se observa que la velocidad est´ a un´ ıvocamente definida para
-cada intensidad de corriente mediante una relaci´ on lineal (curva
-roja). Posteriormente, para determinar la intensidad de campoH, se
-aplic´ o la relaci´ on decreep. La figura 3.17-(b) muestra la
-dependencia lineal entre el campo calculado y la corriente aplicada para
-todas las muestras. Finalmente, en la figura 3.17-(c) se presentan los
-valores de las pendientes de calibraci´ onκen funci´ on de la presi´ on
-de crecimiento. A partir de estos datos, se obtuvo un factor de
-calibraci´ on promedio ¯κ= (7.5±0.7) mT/A. Este resultado conlleva un
-error porcentual del 10 %, lo cual denota la consistencia del ajuste y
-el m´ etodo de calibraci´ on. Figura 3.17:(a)- Linealizaci´ on de la
-velocidad en funci´ on de la corriente aplicada para la muestra de 3
-mTorr. (b)- Campo magn´ etico extra´ ıdo mediante la ley decreepen
-funci´ on de la corriente para el conjunto de muestras estudiadas. (c)-
-Constante de calibraci´ onκen funci´ on de la presi´ on de crecimiento
-(pIr ). La l´ ınea de puntos roja indica el valor medio global ¯κ. Como
-se mension´ o al comienzo de esta secci´ on, si bien las simulaciones de
-campo magn´ etico se realizaron a una distancia de la bobina de 1 mm, la
-superficie efectiva de la muestra se ubica a 0.7 mm por encima de ese
-plano, debido al espesor del sustrato de SiO2. El campo simulado en esa
-posici´ on con una corriente en la bobina de 2 A, da un valor deµ 0H= 16
-mT, el cual coincide con el campo de saturaci´ on medido en
+44Resultados [ corresponde con un error relativoε r = 0.01, confirmando
+que los radios est´ an correc- ] tamente definidos. Finalmente, la
+figura 3.16-(c) muestra la dependencia entreρyt N , evidenciando una
+alta linealidad que permite determinar la velocidad de crecimiento
+mediante un ajuste lineal. El protocolo de medida deVse repiti´ o para
+distintos valores de corriente aplicada. [ En la figura 3.17-(a) se
+grafican los valores de ln(V) en funci´ on dei−1/4 para la muestra ]
+crecida ap Ir = 3 mTorr. Se observa que la velocidad est´ a un´
+ıvocamente definida para cada intensidad de corriente mediante una
+relaci´ on lineal (curva roja). Posteriormente, para determinar la
+intensidad de campoH, se aplic´ o la relaci´ on decreep. La figura
+3.17-(b) muestra la dependencia lineal entre el campo calculado y la
+corriente aplicada para todas las muestras. Finalmente, en la figura
+3.17-(c) se presentan los valores de las pendientes de calibraci´ onκen
+funci´ on de la presi´ on de crecimiento. A partir de [ estos datos, se
+obtuvo un factor de calibraci´ on promedio ¯κ= (7.5±0.7) mT/A. Este ]
+resultado conlleva un error porcentual del 10 %, lo cual denota la
+consistencia del ajuste y el m´ etodo de calibraci´ on. Figura 3.17:(a)-
+Linealizaci´ on de la velocidad en funci´ on de la corriente aplicada
+para la muestra de 3 mTorr. (b)- Campo magn´ etico extra´ ıdo mediante
+la ley decreepen funci´ on de la corriente para el conjunto de muestras
+estudiadas. (c)- Constante de calibraci´ onκen funci´ on de la presi´ on
+de crecimiento (pIr ). La l´ ınea de puntos roja indica el valor medio
+global ¯κ. Como se mension´ o al comienzo de esta secci´ on, si bien las
+simulaciones de campo magn´ etico se realizaron a una distancia de la
+bobina de 1 mm, la superficie efectiva de la muestra se ubica a 0.7 mm
+por encima de ese plano, debido al espesor del sustrato de SiO2. El
+campo simulado en esa posici´ on con una corriente en la bobina de 2 A,
+da un valor deµ 0H= 16 mT, el cual coincide con el campo de saturaci´ on
+medido en
 
 3.3 Calibraci´ on experimental de la bobina45 la referencia [9].
 Utilizando la calibraci´ on de campo efectivo sobre la muestra, se tiene
@@ -1669,8 +1682,8 @@ Asimismo, se observ´ o una dependencia significativa de la ganancia (G)
 con el tiempo de exposici´ on (te): para tiempos prolongados (200 ms),
 el rango ´ util de ganancia se reduce considerablemente antes de que el
 contraste disminu- ya, mientras que para tiempos m´ as cortos (50 ms y
-100 ms) el sistema presenta mayor estabilidad operativa. En este
-contexto, la elecci´ on dete = 100 ms representa un com- promiso ´
+100 ms) el sistema presenta mayor [ estabilidad operativa. En este
+contexto, la elecci´ on dete = 100 ms representa un com- ] promiso ´
 optimo entre estabilidad del contraste y resoluci´ on temporal adecuada
 para los experimentos din´ amicos. En cuanto a la respuesta el´ ectrica
 y la calibraci´ on de campo, el sistema cumpli´ o con los requerimientos
@@ -1693,34 +1706,35 @@ fabricaci´ on influyen directamente en la movilidad de las PDMs y en las
 propiedades de anisotrop´ ıa magn´ etica de las muestras. 4.2.
 Conclusiones En primer lugar, el trabajo permiti´ o dise˜ nar y
 construir con ´ exito un microscopio PMOKE totalmente funcional,
-destacando la integraci´ on de un sistema de iluminaci´ on tipo K¨ ohler
-y un porta-muestras optimizado mediante impresi´ on 3D. Este avance ins-
-trumental se complementa con un sistema de campo magn´ etico de alto
-rendimiento, compuesto por un amplificador de potencia clase D y una
-bobina dise˜ nada espec´ ıfica- mente para lograr tiempos de respuesta
-en el orden de los microsegundos, condiciones esenciales para el estudio
-preciso de reg´ ımenes de creep. En cuanto al an´ alisis de datos, se
-implement´ o un robusto protocolo de procesa- miento y binarizaci´ on
-digital que garantiza la extracci´ on fidedigna del radio medio y los
-contornos de los dominios tipo burbuja. Este m´ etodo demostr´ o ser
-sumamente eficaz para eliminar el ruido y las imperfecciones de las im´
-agenes originales, transfor- mando al microscopio en una herramienta
-cuantitativa capaz de replicar resultados de caracterizaci´ on en
-materiales complejos, como las multicapas de Co con anisotrop´ ıa
-perpendicular al plano. Finalmente, la validaci´ on cient´ ıfica de este
-dispositivo confir- ma su capacidad para ir m´ as all´ a de la simple
-visualizaci´ on cualitativa de dominios magn´ eticos. Gracias a la
-precisi´ on y estabilidad logradas, este desarrollo constituye una
-plataforma experimental de gran valor para futuras investigaciones. 4.3.
-Trabajo a Futuro Como l´ ıneas de trabajo a futuro, se propone una
-mejora sustancial del sistema de adquisici´ on mediante la incorporaci´
-on de una c´ amara con resoluci´ on digital de 12 bits. Este cambio
-permitir´ a ampliar el rango din´ amico efectivo y mejorar la relaci´ on
-se˜ nal–ruido, aspecto cr´ ıtico en mediciones PMOKE donde el contraste
-magneto-´ opti- co es reducido. La mayor profundidad de cuantizaci´ on
-posibilitar´ a detectar variacio- nes m´ as sutiles en la intensidad
-asociadas al giro de magnetizaci´ on, especialmente en muestras de bajo
-contraste. En paralelo, se plantea la implementaci´ on de un sistema
+destacando la integraci´ on de un sistema de iluminaci´ on [ tipo K¨
+ohler y un porta-muestras optimizado mediante impresi´ on 3D. Este
+avance ins- ] trumental se complementa con un sistema de campo magn´
+etico de alto rendimiento, compuesto por un amplificador de potencia
+clase D y una bobina dise˜ nada espec´ ıfica- mente para lograr tiempos
+de respuesta en el orden de los microsegundos, condiciones esenciales
+para el estudio preciso de reg´ ımenes de creep. En cuanto al an´ alisis
+de datos, se implement´ o un robusto protocolo de procesa- miento y
+binarizaci´ on digital que garantiza la extracci´ on fidedigna del radio
+medio y los contornos de los dominios tipo burbuja. Este m´ etodo
+demostr´ o ser sumamente eficaz para eliminar el ruido y las
+imperfecciones de las im´ agenes originales, transfor- mando al
+microscopio en una herramienta cuantitativa capaz de replicar resultados
+de caracterizaci´ on en materiales complejos, como las multicapas de Co
+con anisotrop´ ıa perpendicular al plano. Finalmente, la validaci´ on
+cient´ ıfica de este dispositivo confir- ma su capacidad para ir m´ as
+all´ a de la simple visualizaci´ on cualitativa de dominios magn´
+eticos. Gracias a la precisi´ on y estabilidad logradas, este desarrollo
+constituye una plataforma experimental de gran valor para futuras
+investigaciones. 4.3. Trabajo a Futuro Como l´ ıneas de trabajo a
+futuro, se propone una mejora sustancial del sistema de adquisici´ on
+mediante la incorporaci´ on de una c´ amara con resoluci´ on digital de
+12 bits. Este cambio permitir´ a ampliar el rango din´ amico efectivo y
+mejorar la relaci´ on [ se˜ nal–ruido, aspecto cr´ ıtico en mediciones
+PMOKE donde el contraste magneto-´ opti- ] co es reducido. La mayor
+profundidad de cuantizaci´ on posibilitar´ a detectar variacio- nes m´
+as sutiles en la intensidad asociadas al giro de magnetizaci´ on,
+especialmente en muestras de bajo contraste. En paralelo, se plantea la
+implementaci´ on de un sistema
 
 4.3 Trabajo a Futuro49 de control t´ ermico activo que permita estudiar
 la din´ amica de PDMs en funci´ on de la temperatura y explorar reg´
@@ -1741,39 +1755,39 @@ muestra, complementario al campo perpendicular existente.
 
 Bibliograf´ ıa [1] Allwood, D. A., Xiong, G., Faulkner, C. C., Atkinson,
 D., Petit, D., Cowburn, R. P. Magnetic Domain-Wall
-Logic.Science,309(5741), 1688–1692, sep. 2005. 1 [2] Parkin, S. S. P.,
-Hayashi, M., Thomas, L. Magnetic Domain-Wall Racetrack Me-
+Logic.Science,309(5741), 1688–1692, sep. 2005. 1 [ [2] Parkin, S. S. P.,
+Hayashi, M., Thomas, L. Magnetic Domain-Wall Racetrack Me- ]
 mory.Science,320(5873), 190, 2008. [3] Kumar, D., Jin, T., Sbiaa, R.,
 Kl¨ aui, M., Bedanta, S., Fukami, S.,et al.Domain wall memory: Physics,
 materials, and devices.Physics Reports,958, 1–35, 2022. [4] Zhang, X.,
-Zhao, G. P., Fangohr, H., Liu, J. P., Xia, W. X., Xia, J.,et al.
+Zhao, G. P., Fangohr, H., Liu, J. P., Xia, W. X., Xia, J.,et al. [
 Skyrmion-skyrmion and skyrmion-edge repulsions in skyrmion-based
-racetrack memory.Scientific Reports,5, 7643, 2015. 1 [5] Cardozo de
+racetrack ] memory.Scientific Reports,5, 7643, 2015. 1 [5] Cardozo de
 Oliveira, E. R., Xiang, C., Borraz´ as, C., Sandeep, S., G´ omez, J. E.,
-Vas- quez Mansilla, M.,et al.Structural and nanoacoustic
-characterization of Co/Pt fe- rromagnetic superlattices.Journal of
+Vas- [ quez Mansilla, M.,et al.Structural and nanoacoustic
+characterization of Co/Pt fe- ] rromagnetic superlattices.Journal of
 Physics D Applied Physics,58(45), 455301, nov. 2025. 1, 4, 15 [6]
 Cardozo de Oliveira, E. R., Xiang, C., Borraz´ as, C., Sandeep, S., G´
 omez, J. E., V´ asquez Mansilla, M.,et al.Structural, magnetic, and
-nanoacoustic characteriza- tion of Co/Pt superlattices.arXiv e-prints,
-arXiv:2505.19370, mayo 2025. [7] Quinteros, C. P., Jos´ e Cort´ es
+nanoacoustic characteriza- [ tion of Co/Pt superlattices.arXiv e-prints,
+arXiv:2505.19370, mayo 2025. ] [7] Quinteros, C. P., Jos´ e Cort´ es
 Burgos, M., Albornoz, L. J., G´ omez, J. E., Granell, P., Golmar, F.,et
-al.Impact of growth conditions on the domain nucleation and domain wall
-propagation in Pt/Co/Pt stacks.Journal of Physics D Applied
+al.Impact of growth conditions on the domain nucleation [ and domain
+wall propagation in Pt/Co/Pt stacks.Journal of Physics D Applied ]
 Physics,54(1), 015002, ene. 2021. 10, 16 [8] Granada, M., Sirena, M.,
-Steren, L. B., Leyva, G. Structure and magnetic pro- perties of La 2/3Sr
-1/3MnO 3/CaMnO 3 multilayers.Physica B Condensed Matter, 354(1-4),
-113–116, dic. 2004. 1 [9] Domenichini, P., Brock, J. A., Curiale, J.,
-Kolton, A. B. Effect of Ir growth pressure on the domain wall dynamics
-in Ta/Pt/Co/Ir/Ta stacks.Physical Review B,110(1), 014401, 2024. 1, 4,
-10, 13, 14, 15, 16, 26, 41, 45 51
+Steren, L. B., Leyva, G. Structure and magnetic pro- [ perties of La
+2/3Sr 1/3MnO 3/CaMnO 3 multilayers.Physica B Condensed Matter, ]
+354(1-4), 113–116, dic. 2004. 1 [9] Domenichini, P., Brock, J. A.,
+Curiale, J., Kolton, A. B. Effect of Ir growth [ pressure on the domain
+wall dynamics in Ta/Pt/Co/Ir/Ta stacks.Physical Review ] B,110(1),
+014401, 2024. 1, 4, 10, 13, 14, 15, 16, 26, 41, 45 51
 
 52Bibliograf ´ ıa [10] Domenichini, P., Quinteros, C., Granada, M.,
 Collin, S., George, J. M., Curiale, J.,et al.Transient magnetic domain
 wall AC dynamics by means of MOKE microscopy.arXiv e-prints,
 arXiv:1903.03006, mar. 2019. 10 [11] Domenichini, P., Quinteros, C. P.,
-Granada, M., Collin, S., George, J.-M., Curiale, J.,et al.Transient
-magnetic-domain-wall ac dynamics by means of magneto- optical Kerr
+Granada, M., Collin, S., George, J.-M., Curiale, [ J.,et al.Transient
+magnetic-domain-wall ac dynamics by means of magneto- ] optical Kerr
 effect microscopy.Physical Review B,99(21), 214401, 2019. 10, 12, 13, 16
 [12] Shen, P., Qian, H.-D., Han, J., Liu, T., Yan, Z., Ji, M.,et
 al.Investigation of magnetic domain evolutions and microstructural
@@ -1790,12 +1804,12 @@ M. D. Magnetism and Magnetic Materials. Cambridge University Press,
 2010. 2 [18] Skomski, R. Simple models of magnetism. Oxford Graduate
 Texts, 1a ed´ on. Oxford: Oxford University Press, 2008. 3 [19] Spohn,
 H. Introduction to modern statistical mechanics (david chandler).SIAM
-Review,30(4), 680–680, 1988. 4 [20] Rodriguez, J. C. E., Avil´ es-F´
-elix, L., Aguirre, M. H., Rodriguez, L. M., Salomo- ni, D., Auffret,
-S.,et al.Perpendicularly magnetized Tb/Co multilayers featu- ring tilted
-uniaxial anisotropy: Experiments and modeling.arXiv e-prints, ar-
-Xiv:2505.14849, mayo 2025. 4 [21] Wang, C.-K., Hu, C.-L., Wei, T. y. M.
-B.-Q. y. T. F., Hong y Zhang. Numerical simulation study on
+Review,30(4), 680–680, 1988. 4 [ [20] Rodriguez, J. C. E., Avil´ es-F´
+elix, L., Aguirre, M. H., Rodriguez, L. M., Salomo- ] [ ni, D., Auffret,
+S.,et al.Perpendicularly magnetized Tb/Co multilayers featu- ] [ ring
+tilted uniaxial anisotropy: Experiments and modeling.arXiv e-prints, ar-
+] Xiv:2505.14849, mayo 2025. 4 [ [21] Wang, C.-K., Hu, C.-L., Wei, T. y.
+M. B.-Q. y. T. F., Hong y Zhang. Numerical ] simulation study on
 current-driven dynamics and defect influence on skyrmion in Pt/Co thin
 films.Physica B Condensed Matter,723, 418115, feb. 2026. 7
 
@@ -1817,23 +1831,24 @@ Physics Letters,113(22), 222407, 11 2018. 10 [28] H¨ artl, P.,
 Sankeshwar, V., Bode, M. Magnetic domain structure of holmium films at
 low temperatures.Phys. Rev. B,112(17), 174402, nov. 2025. [29] Moreno,
 R., Evans, R. F. L., Khmelevskyi, S., Mu˜ noz, M. C., Chantrell, R. W.,
-Chubykalo-Fesenko, O. Temperature-dependent exchange stiffness and
-domain wall width in co.Phys. Rev. B,94, 104433, Sep 2016. 10 [30]
+[ Chubykalo-Fesenko, O. Temperature-dependent exchange stiffness and
+domain ] wall width in co.Phys. Rev. B,94, 104433, Sep 2016. 10 [30]
 Williams, W., Enkin, R. J., Milne, G. Magnetic domain wall visibility in
 bitter pattern imaging.Journal of Geophysical Research: Solid
-Earth,97(B12), 17433– 17438, 1992. 10 [31] Hartmann, U. A theoretical
-analysis of bitter-pattern evolution.Journal of Mag- netism and Magnetic
-Materials,68(3), 298–304, 1987. 10 [32] Zhang, D., Shi, M., Yang, X. y.
-Y. X. y. H. Z. y. L. T. y. Z. S., Jianzhi y Zhang. Determination of
-magnetic properties due to the effect of the stress and welding
-conditions on magnetically shielded room.Measurement,255, 117805, 2025.
-10 [33] Jamaluddin, S., Nisaiyok, Y. y. B. H. y. F. B. A. y. S. P. E. y.
-S. Y. F. y. W. T. y. N. A. y. E. G. M. y. B. R. R. y. Y. J. H. y. Z. L.
-y. M. J. F. y. C. Y.-T. y. G. N. J., Warit y Zhang. Domain wall induced
-topological Hall effect in the chiral-lattice ferromagnet FexTaS2.arXiv
-e-prints, p´ ag. arXiv:2510.20181, 2025. [34] Tang, Y., Fan, S.,
-Gallacher, Y. y. O. S., Barry y Wang. The Effect of Tempera- ture and
-Film Thickness on Domain Wall Energy Density, Coercivity Force, and
+Earth,97(B12), 17433– 17438, 1992. 10 [ [31] Hartmann, U. A theoretical
+analysis of bitter-pattern evolution.Journal of Mag- ] netism and
+Magnetic Materials,68(3), 298–304, 1987. 10 [32] Zhang, D., Shi, M.,
+Yang, X. y. Y. X. y. H. Z. y. L. T. y. Z. S., Jianzhi y Zhang.
+Determination of magnetic properties due to the effect of the stress and
+welding conditions on magnetically shielded room.Measurement,255,
+117805, 2025. 10 [33] Jamaluddin, S., Nisaiyok, Y. y. B. H. y. F. B. A.
+y. S. P. E. y. S. Y. F. y. W. T. y. N. A. y. E. G. M. y. B. R. R. y. Y.
+J. H. y. Z. L. y. M. J. F. y. C. Y.-T. y. G. N. J., Warit y Zhang.
+Domain wall induced topological Hall effect in the chiral-lattice
+ferromagnet FexTaS2.arXiv e-prints, p´ ag. arXiv:2510.20181, 2025. [34]
+Tang, Y., Fan, S., Gallacher, Y. y. O. S., Barry y Wang. The Effect of
+Tempera- ture and Film Thickness on Domain Wall Energy Density,
+Coercivity Force, and
 
 54Bibliograf ´ ıa Magnetostriction of Galfenol Films.IEEE Transactions
 on Magnetics,60(6), TMAG.2024, 2024. 10 [35] Tian, Y., Liu, H. y. D. J.
@@ -1844,31 +1859,31 @@ Lorentz Microscopy.IEEE Transactions on Magnetics,51(11), TMAG.2015,
 Andr´ as y Gliga. Quantitative imaging of the magnetic field
 distribution in an artificial spin ice studied by off- axis electron
 holography.Journal of Magnetism and Magnetic Materials,543, 168535,
-2022. [37] Straka, L., Vronka, J. y. V. P. y. S. H. y. H.-O., Marek y
-Maˇ n´ ak. Atomic To- pology and Magnetic Microstructure of Highly
-Mobile Type I and Supermobile Type II Twin Boundaries in 10M Ni-Mn-Ga
-Single Crystal.arXiv e-prints, p´ ag. arXiv:2505.14096, may 2025. [38]
+2022. [ [37] Straka, L., Vronka, J. y. V. P. y. S. H. y. H.-O., Marek y
+Maˇ n´ ak. Atomic To- ] pology and Magnetic Microstructure of Highly
+Mobile Type I and Supermobile [ Type II Twin Boundaries in 10M Ni-Mn-Ga
+Single Crystal.arXiv e-prints, p´ ag. ] arXiv:2505.14096, may 2025. [38]
 Goldstein, J. I., Newbury, P. y. J. D. C. y. R. J.-J. y. L. C. E. y. F.
 C. y. L. E., Dale E. y Echlin. Scanning Electron Microscopy and X-ray
 Microanalysis. 4a ed´ on. New York: Springer, 2017. [39] Fathers, D. J.,
-Jakubovics, J. P. Methods of observing magnetic domains by scanning
-electron microscopy.Physica B+C,86-88, 1343–1344, 1977. 10 [40] Clarke,
-J., Braginski, A. I. The SQUID Handbook: Fundamentals and Technology of
-SQUIDs and SQUID Systems, tomo 1. Weinheim: Wiley-VCH, 2004. 10 [41]
-Clarke, J., Braginski, A. I. The SQUID Handbook: Applications of SQUIDs
-and SQUID Systems, tomo 2. Weinheim: Wiley-VCH, 2006. [42] Nandi, N.,
-Zhang, I., Estrada Salda˜ na, A. y. T. M. y. L. Y. y. C. M. y. B. M. y.
-K. S. y. A. S. y. K. P. y. G.-R. K. y. N. J. y. M. K., Juan Carlos y
-Vekris. Supercon- ductivity at ferromagnetic domain walls in hybrid
-InAs/EuS/Al nanowires, part 1: studied by scanning SQUID imaging. En:
-APS March Meeting Abstracts, tomo 2022, p´ ag. D61.007. 2022. [43] Garc´
-ıa-Campos, P., Dolocan, A. D. y. A. D. y. H. K., V. O. y Huxley.
-Visualization of vortex sheets and half quantum vortices in the chiral
-odd-parity superconductor UPt3.arXiv e-prints, p´ ag. arXiv:2512.03908,
-2025. 10 [44] Domenichini, P., Paris, M. G. y. G. M. y. G. J.-M. y. P.
-G. y. K. A. B., F. y Ca- peluto. Curvature-driven ac-assisted creep
-dynamics of magnetic domain walls. Physical Review B,103(22), L220409,
-2021. 12, 16
+Jakubovics, J. P. Methods of observing magnetic domains by [ scanning
+electron microscopy.Physica B+C,86-88, 1343–1344, 1977. 10 ] [40]
+Clarke, J., Braginski, A. I. The SQUID Handbook: Fundamentals and
+Technology of SQUIDs and SQUID Systems, tomo 1. Weinheim: Wiley-VCH,
+2004. 10 [41] Clarke, J., Braginski, A. I. The SQUID Handbook:
+Applications of SQUIDs and SQUID Systems, tomo 2. Weinheim: Wiley-VCH,
+2006. [42] Nandi, N., Zhang, I., Estrada Salda˜ na, A. y. T. M. y. L. Y.
+y. C. M. y. B. M. y. K. [ S. y. A. S. y. K. P. y. G.-R. K. y. N. J. y.
+M. K., Juan Carlos y Vekris. Supercon- ] [ ductivity at ferromagnetic
+domain walls in hybrid InAs/EuS/Al nanowires, part ] 1: studied by
+scanning SQUID imaging. En: APS March Meeting Abstracts, tomo 2022, p´
+ag. D61.007. 2022. [43] Garc´ ıa-Campos, P., Dolocan, A. D. y. A. D. y.
+H. K., V. O. y Huxley. Visualization of vortex sheets and half quantum
+vortices in the chiral odd-parity superconductor UPt3.arXiv e-prints, p´
+ag. arXiv:2512.03908, 2025. 10 [ [44] Domenichini, P., Paris, M. G. y.
+G. M. y. G. J.-M. y. P. G. y. K. A. B., F. y Ca- ] [ peluto.
+Curvature-driven ac-assisted creep dynamics of magnetic domain walls. ]
+Physical Review B,103(22), L220409, 2021. 12, 16
 
 Bibliograf ´ ıa55 [45] Domenichini, P., Pasquini, M. G., Gabriela y
 Capeluto. Statistical domain wall roughness analysis through
@@ -1911,28 +1926,29 @@ A., Bowen, C. R., Willander, M.,et al.New materials for micro-scale
 sensors and actuators: An engineering review.Materials Science and
 Engineering: R: Reports,56(1), 1–129, 2007. 15 [60] Lavrijsen, R.,
 Hartmann, D. M. F., van den Brink, A., Yin, Y., Barcones, B., Duine, R.
-A.,et al.Asymmetric magnetic bubble expansion under in-plane field in
+A.,et al.Asymmetric magnetic bubble expansion under in-plane field [ in
 Pt/Co/Pt: Effect of interface engineering.91(10), 104414, mar. 2015. 15,
-16 [61] Seshan, K. Handbook of Thin-Film Deposition Processes and
+16 ] [61] Seshan, K. Handbook of Thin-Film Deposition Processes and
 Techniques. 2 a ed´ on. Norwich, NY: William Andrew Publishing, 2002. 16
-[62] Hol´ y, V., Pietsch, T., Ullrich y Baumbach. High-Resolution X-Ray
-Scattering from Thin Films and Multilayers, tomo 149 deSpringer Tracts
-in Modern Physics. Springer-Verlag, 1999. 16 [63] Shahbazi, K., Kim, H.
-T. y. S. J. M. y. B. A. y. R. M. D. y. J. V. y. M. T. A. y. M. C. H.,
-J.-V. y Nembach. Domain-wall motion and interfacial Dzyaloshinskii-
-Moriya interactions in Pt/Co/Ir/Ta multilayers.Physical Review B,99(9),
-094409, 2019. 16 [64] Kuch, W., Sch¨ afer, P. y. H. F. U., Rudolf y
-Fischer. Magnetic Microscopy of Layered Structures, tomo 57 deSpringer
-Series in Surface Sciences. Springer- Verlag, 2015. 17 [65] Kuch, W.,
+[ [62] Hol´ y, V., Pietsch, T., Ullrich y Baumbach. High-Resolution
+X-Ray Scattering ] from Thin Films and Multilayers, tomo 149 deSpringer
+Tracts in Modern Physics. Springer-Verlag, 1999. 16 [63] Shahbazi, K.,
+Kim, H. T. y. S. J. M. y. B. A. y. R. M. D. y. J. V. y. M. T. A. y. [ M.
+C. H., J.-V. y Nembach. Domain-wall motion and interfacial
+Dzyaloshinskii- ] [ Moriya interactions in Pt/Co/Ir/Ta
+multilayers.Physical Review B,99(9), ] 094409, 2019. 16 [64] Kuch, W.,
 Sch¨ afer, P. y. H. F. U., Rudolf y Fischer. Magnetic Microscopy of
-Layered Structures. Springer Science & Business Media, 2003. 19 [66]
-Sugano, S., Kojima, N. Magneto-Optics, tomo 128 deSpringer Series in
-Solid- State Sciences. Springer, 2000. 19 [67] Gonzalez, R. C., Woods,
-R. E. Digital Image Processing. 3a ed´ on. Pearson/Prentice Hall, 2008.
-21, 29, 40 [68] Nixon, M. S., Aguado, A. S. Feature Extraction and Image
-Processing for Com- puter Vision. 4 a ed´ on. Academic Press, 2019. [69]
-Howse, J., Minichino, J. Learning OpenCV 4 Computer Vision with Python.
-3 a ed´ on. Packt Publishing, 2020. 21
+Layered Structures, tomo 57 deSpringer Series in Surface Sciences.
+Springer- Verlag, 2015. 17 [65] Kuch, W., Sch¨ afer, P. y. H. F. U.,
+Rudolf y Fischer. Magnetic Microscopy of Layered Structures. Springer
+Science & Business Media, 2003. 19 [ [66] Sugano, S., Kojima, N.
+Magneto-Optics, tomo 128 deSpringer Series in Solid- ] State Sciences.
+Springer, 2000. 19 [67] Gonzalez, R. C., Woods, R. E. Digital Image
+Processing. 3a ed´ on. Pearson/Prentice Hall, 2008. 21, 29, 40 [68]
+Nixon, M. S., Aguado, A. S. Feature Extraction and Image Processing for
+Com- puter Vision. 4 a ed´ on. Academic Press, 2019. [69] Howse, J.,
+Minichino, J. Learning OpenCV 4 Computer Vision with Python. 3 a ed´ on.
+Packt Publishing, 2020. 21
 
 Bibliograf ´ ıa57 [70] Griffiths, D. J. Introduction to Electrodynamics.
 4 a ed´ on. Pearson, 2013. 22, 23 [71] Chapra, S. C., Canale, R. P.
