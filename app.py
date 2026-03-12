@@ -37,7 +37,11 @@ def procesar_documento():
         chunks = text_splitter.split_text(text)
         
         # Usamos el modelo estable embedding-001
-        embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=api_key)
+        embeddings = GoogleGenerativeAIEmbeddings(
+    model="models/text-embedding-004", # O "models/embedding-001"
+    google_api_key=api_key,
+    task_type="retrieval_document" # Añadir esto ayuda a la API a identificar la tarea
+)
         vectorstore = FAISS.from_texts(chunks, embeddings)
         return vectorstore.as_retriever(search_kwargs={"k": 5})
     except Exception as e:
