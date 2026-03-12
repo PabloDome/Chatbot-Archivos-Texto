@@ -10,13 +10,13 @@ from langchain_core.embeddings import Embeddings
 import os
 import time
 
-# 1. Configuración de la página
+# 1. Configuración de la interfaz
 st.set_page_config(page_title="Asistente de Tesis - M. E. Romano", page_icon="🔬")
 st.title("🔬 Asistente Virtual: Tesis de Mauricio Romano")
 
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
-# Clase corregida para heredar de Embeddings y evitar el error "not callable"
+# Clase de Embeddings optimizada para tu cuenta
 class GoogleDirectEmbeddings(Embeddings):
     def __init__(self, api_key):
         genai.configure(api_key=api_key)
@@ -32,7 +32,7 @@ class GoogleDirectEmbeddings(Embeddings):
                     task_type="retrieval_document"
                 )
                 embeddings.append(res["embedding"])
-                time.sleep(1.5) # Respetamos cuota
+                time.sleep(1.5) 
                 progreso.progress((i + 1) / len(texts))
             except Exception:
                 time.sleep(10)
@@ -53,36 +53,30 @@ def procesar_texto(ruta_archivo):
     try:
         with open(ruta_archivo, "r", encoding="utf-8") as f:
             text = f.read()
-        
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=2500, chunk_overlap=250)
         chunks = text_splitter.split_text(text)
-        
-        # Instanciamos la clase corregida
         embeddings_model = GoogleDirectEmbeddings(api_key=api_key)
-        
-        # Pasamos el objeto directamente
         vectorstore = FAISS.from_texts(chunks, embeddings_model)
         return vectorstore.as_retriever(search_kwargs={"k": 3})
     except Exception as e:
-        st.error(f"Error al procesar el archivo: {str(e)}")
+        st.error(f"Error al procesar: {str(e)}")
         return None
 
-# 2. Lógica de carga y Chat
+# 2. Lógica de Chat
 if api_key:
     archivo_txt = "tesis_mauricio.txt"
-    
     if "retriever" not in st.session_state:
         if os.path.exists(archivo_txt):
-            with st.spinner("Cargando conocimientos de la tesis..."):
+            with st.spinner("Cargando conocimientos..."):
                 st.session_state.retriever = procesar_texto(archivo_txt)
         else:
-            st.error(f"No se encontró el archivo '{archivo_txt}' en el repositorio.")
+            st.error(f"No se encontró '{archivo_txt}'")
 
-    if "retriever" in st.session_state and st.session_state.retriever:
+    if st.session_state.get("retriever"):
         pregunta = st.text_input("Realizá tu consulta técnica:")
-        
         if pregunta:
             try:
+                # CAMBIO CLAVE: Forzamos el uso de la versión v1 de la API para evitar el 404
                 llm = ChatGoogleGenerativeAI(
                     model="gemini-1.5-flash", 
                     google_api_key=api_key,
@@ -90,22 +84,29 @@ if api_key:
                 )
                 
                 prompt = ChatPromptTemplate.from_template("""
-                Eres un experto en física experimental. 
-                Responde basándote únicamente en el contexto de la tesis provisto.
-                
+                Eres un experto en física. Responde basándote en la tesis provista.
                 Contexto: {context}
                 Pregunta: {question}
-                
-                Respuesta técnica:""")
+                Respuesta:""")
 
                 chain = (
                     {"context": st.session_state.retriever, "question": RunnablePassthrough()}
                     | prompt | llm | StrOutputParser()
                 )
                 
-                with st.spinner("Buscando en la tesis..."):
+                with st.spinner("Buscando respuesta..."):
                     st.info(chain.invoke(pregunta))
             except Exception as e:
-                st.error(f"Error en la consulta: {str(e)}")
+                # Si sigue dando error de versión, intentamos con el nombre alternativo
+                st.warning("Reintentando con configuración de respaldo...")
+                try:
+                    llm_alt = ChatGoogleGenerativeAI(
+                        model="models/gemini-1.5-flash", # Nombre completo con prefijo
+                        google_api_key=api_key
+                    )
+                    chain_alt = ({"context": st.session_state.retriever, "question": RunnablePassthrough()} | prompt | llm_alt | StrOutputParser())
+                    st.info(chain_alt.invoke(pregunta))
+                except Exception as e2:
+                    st.error(f"Error persistente de API: {str(e2)}")
 else:
-    st.error("Configurá la GOOGLE_API_KEY en Secrets.")
+    st.error("Configurá la GOOGLE_API_KEY.")
