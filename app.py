@@ -6,6 +6,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+import google.generativeai as genai
 import os
 
 # 1. Configuración de la interfaz
@@ -21,28 +22,34 @@ def procesar_documento():
     nombre_archivo = "tesis_mauricio.pdf"
     
     if not os.path.exists(nombre_archivo):
-        st.error(f"Error: No se encontró '{nombre_archivo}' en el repositorio.")
+        st.error(f"Error: No se encontró '{nombre_archivo}' en GitHub.")
         return None
     
     try:
+        # 1. Leer el PDF
         pdf_reader = PyPDF2.PdfReader(nombre_archivo)
         text = "".join([page.extract_text() or "" for page in pdf_reader.pages])
         
+        # 2. Dividir en fragmentos
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         chunks = text_splitter.split_text(text)
         
-        # CONFIGURACIÓN BLINDADA: Forzamos transporte REST y modelo estable
-        embeddings = GoogleGenerativeAIEmbeddings(
-            model="models/embedding-001",
-            google_api_key=api_key,
-            transport="rest" 
-        )
+        # 3. Configurar Google Generative AI directamente
+        genai.configure(api_key=api_key)
         
-        vectorstore = FAISS.from_texts(chunks, embeddings)
+        # Clase personalizada para conectar Google SDK con FAISS
+        class GoogleCustomEmbeddings:
+            def embed_documents(self, texts):
+                return [genai.embed_content(model="models/embedding-001", content=t, task_type="retrieval_document")["embedding"] for t in texts]
+            def embed_query(self, text):
+                return genai.embed_content(model="models/embedding-001", content=text, task_type="retrieval_query")["embedding"]
+
+        # 4. Crear el almacén vectorial
+        vectorstore = FAISS.from_texts(chunks, GoogleCustomEmbeddings())
         return vectorstore.as_retriever(search_kwargs={"k": 5})
     
     except Exception as e:
-        st.error(f"Error crítico en la conexión con Google: {str(e)}")
+        st.error(f"Error crítico: {str(e)}")
         return None
 
 # 2. Lógica del Chatbot
