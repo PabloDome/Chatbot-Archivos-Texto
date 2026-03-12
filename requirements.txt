@@ -1,7 +1,7 @@
 streamlit
 PyPDF2
-langchain
-langchain-google-genai==2.0.1
+langchain>=0.2.0
+langchain-google-genai==1.0.7
 langchain-community
 faiss-cpu
-google-generativeai
+google-generativeai==0.7.2
