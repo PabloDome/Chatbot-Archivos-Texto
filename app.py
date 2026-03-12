@@ -18,37 +18,31 @@ st.markdown("Consultá detalles técnicos sobre el microscopio y el efecto Kerr.
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
 def procesar_documento():
-    # Nombre exacto del archivo en tu repositorio de GitHub
     nombre_archivo = "tesis_mauricio.pdf"
     
     if not os.path.exists(nombre_archivo):
-        st.error(f"Error: No se encontró el archivo '{nombre_archivo}' en el repositorio.")
+        st.error(f"Error: No se encontró '{nombre_archivo}' en el repositorio.")
         return None
     
     try:
         pdf_reader = PyPDF2.PdfReader(nombre_archivo)
-        text = ""
-        for page in pdf_reader.pages:
-            content = page.extract_text()
-            if content:
-                text += content
+        text = "".join([page.extract_text() or "" for page in pdf_reader.pages])
         
-        # División del texto en fragmentos para la base de datos vectorial
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=250)
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         chunks = text_splitter.split_text(text)
         
-        # Configuración estable de Embeddings (Modelo 001 es el más compatible regionalmente)
+        # CONFIGURACIÓN BLINDADA: Forzamos transporte REST y modelo estable
         embeddings = GoogleGenerativeAIEmbeddings(
             model="models/embedding-001",
-            google_api_key=api_key
+            google_api_key=api_key,
+            transport="rest" 
         )
         
         vectorstore = FAISS.from_texts(chunks, embeddings)
         return vectorstore.as_retriever(search_kwargs={"k": 5})
     
     except Exception as e:
-        # Si ves un error 404 aquí, revisá que la API Key tenga habilitada la 'Generative Language API'
-        st.error(f"Error al procesar el documento: {str(e)}")
+        st.error(f"Error crítico en la conexión con Google: {str(e)}")
         return None
 
 # 2. Lógica del Chatbot
