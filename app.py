@@ -28,12 +28,12 @@ def procesar_pdf(pdf_file):
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         chunks = text_splitter.split_text(text)
         
-        # --- PARCHE CRÍTICO: FORZAR V1 ---
-        genai.configure(api_key=api_key, client_options={"api_version": "v1"})
+        # --- CONFIGURACIÓN COMPATIBLE ---
+        genai.configure(api_key=api_key)
         
         class GoogleStableEmbeddings:
             def embed_documents(self, texts):
-                # Usamos el modelo 004 que es el más robusto en v1
+                # Usamos el modelo 004 que es el más estable
                 return [genai.embed_content(
                     model="models/text-embedding-004", 
                     content=t, 
@@ -75,11 +75,10 @@ if api_key:
         
         if pregunta:
             try:
-                # También forzamos el modelo de chat a la versión estable
+                # Inicialización estándar para máxima compatibilidad
                 llm = ChatGoogleGenerativeAI(
                     model="gemini-1.5-flash", 
-                    google_api_key=api_key,
-                    client_options={"api_version": "v1"}
+                    google_api_key=api_key
                 )
                 
                 prompt = ChatPromptTemplate.from_template(
