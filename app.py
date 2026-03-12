@@ -3,7 +3,7 @@ import PyPDF2
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain.chains import RetrievalQA
+from langchain.chains.retrieval_qa.base import RetrievalQA
 
 # 1. Configuración de la interfaz
 st.set_page_config(page_title="Asistente de Tesis - M. E. Romano", page_icon="🔬")
