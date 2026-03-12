@@ -64,4 +64,6 @@ if api_key:
                 chain = ({"context": st.session_state.retriever, "question": RunnablePassthrough()} | prompt | llm | StrOutputParser())
                 st.info(chain.invoke(pregunta))
             except Exception as e:
-                st.
+                st.error(f"Error en la respuesta: {str(e)}")
+else:
+    st.error("Falta la API Key en Secrets.")
