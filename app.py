@@ -3,23 +3,19 @@ import PyPDF2
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain.chains.retrieval_qa.base import RetrievalQA
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser
 
 # 1. Configuración de la interfaz
 st.set_page_config(page_title="Asistente de Tesis - M. E. Romano", page_icon="🔬")
 
 st.title("🔬 Asistente Virtual: Tesis de Mauricio Romano")
-st.markdown("""
-Consultá detalles técnicos sobre la tesis: 
-**'Construcción de un Microscopio Magneto-Óptico para el estudio de películas Ultradelgadas'**.
-""")
+st.markdown("Consultá detalles técnicos sobre el microscopio y el efecto Kerr.")
 
-# 2. Conexión automática con la clave de Google (Invisible para el usuario)
-# Busca la clave 'GOOGLE_API_KEY' en la configuración interna de Streamlit
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
 def procesar_documento():
-    # El archivo debe tener este nombre exacto en tu repositorio de GitHub
     nombre_archivo = "tesis-romano (1).pdf"
     try:
         pdf_reader = PyPDF2.PdfReader(nombre_archivo)
@@ -27,46 +23,51 @@ def procesar_documento():
         for page in pdf_reader.pages:
             text += page.extract_text()
         
-        # Dividimos el texto para que la IA localice mejor los datos técnicos
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=250)
         chunks = text_splitter.split_text(text)
         
-        # Creamos la base de datos de conocimientos con embeddings de Google
         embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=api_key)
         vectorstore = FAISS.from_texts(chunks, embeddings)
-        return vectorstore
+        return vectorstore.as_retriever(search_kwargs={"k": 5})
     except Exception as e:
-        st.error(f"Error al cargar el PDF: Aseguráte de que el archivo se llama '{nombre_archivo}' en tu GitHub.")
+        st.error(f"Error: Aseguráte de que '{nombre_archivo}' esté en GitHub.")
         return None
 
-# 3. Lógica del Chatbot
+# 2. Lógica del Chatbot (Versión 2026 estable)
 if api_key:
-    # Usamos la memoria de sesión para no re-analizar el PDF en cada pregunta
-    if "vector_db" not in st.session_state:
-        with st.spinner("Analizando contenido técnico de la tesis..."):
-            st.session_state.vector_db = procesar_documento()
+    if "retriever" not in st.session_state:
+        with st.spinner("Analizando la tesis..."):
+            st.session_state.retriever = procesar_documento()
     
-    db = st.session_state.vector_db
+    retriever = st.session_state.retriever
     
-    if db:
-        pregunta = st.text_input("Hacé una pregunta sobre el microscopio, el software o el efecto Kerr:")
+    if retriever:
+        pregunta = st.text_input("Hacé tu pregunta técnica:")
         
         if pregunta:
             try:
-                # Usamos Gemini 1.5 Flash para respuestas rápidas y precisas
                 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
-                qa_chain = RetrievalQA.from_chain_type(
-                    llm=llm, 
-                    chain_type="stuff", 
-                    retriever=db.as_retriever(search_kwargs={"k": 5})
+                
+                # Definimos cómo debe responder la IA
+                template = """Respondé la pregunta basándote solo en el siguiente contexto técnico de la tesis:
+                {context}
+                
+                Pregunta: {question}
+                """
+                prompt = ChatPromptTemplate.from_template(template)
+
+                # Esta cadena de comandos reemplaza al viejo RetrievalQA que fallaba
+                chain = (
+                    {"context": retriever, "question": RunnablePassthrough()}
+                    | prompt
+                    | llm
+                    | StrOutputParser()
                 )
                 
                 with st.spinner("Buscando en la tesis..."):
-                    respuesta = qa_chain.invoke(pregunta)
-                    st.info(respuesta["result"])
+                    respuesta = chain.invoke(pregunta)
+                    st.info(respuesta)
             except Exception as e:
-                st.error("Hubo un error en la consulta. Verificá si la clave en Secrets es correcta.")
+                st.error("Error en la consulta. Verificá la clave en Secrets.")
 else:
-    # Este mensaje solo se verá si falta la clave en el panel de Streamlit Cloud
-    st.error("⚠️ Error de configuración: No se encontró la clave 'GOOGLE_API_KEY' en los Secrets.")
-    st.info("Para solucionar esto, andá a Settings -> Secrets en tu panel de Streamlit y agregá la clave.")
+    st.error("Falta GOOGLE_API_KEY en Secrets.")
