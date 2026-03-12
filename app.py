@@ -14,36 +14,37 @@ st.set_page_config(page_title="Asistente de Tesis - M. E. Romano", page_icon="�
 st.title("🔬 Asistente Virtual: Tesis de Mauricio Romano")
 st.markdown("Consultá detalles técnicos sobre el microscopio y el efecto Kerr.")
 
+# Obtención de la API Key desde Secrets
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
 def procesar_documento():
-    # Buscamos cualquier archivo que termine en .pdf en la carpeta
-    archivos_pdf = [f for f in os.listdir('.') if f.endswith('.pdf')]
+    # Buscamos específicamente el archivo confirmado
+    nombre_archivo = "tesis_mauricio.pdf"
     
-    if not archivos_pdf:
-        st.error("Error: No se encontró ningún archivo PDF en el repositorio de GitHub.")
+    if not os.path.exists(nombre_archivo):
+        st.error(f"Error: No se encontró el archivo '{nombre_archivo}' en el repositorio.")
         return None
-    
-    # Tomamos el primero que encuentre (por ejemplo: 'tesis-romano (1).pdf')
-    nombre_archivo = archivos_pdf[0]
     
     try:
         pdf_reader = PyPDF2.PdfReader(nombre_archivo)
         text = ""
         for page in pdf_reader.pages:
-            text += page.extract_text()
+            content = page.extract_text()
+            if content:
+                text += content
         
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=250)
         chunks = text_splitter.split_text(text)
         
-        embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004", google_api_key=api_key)
+        # Usamos el modelo estable embedding-001
+        embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=api_key)
         vectorstore = FAISS.from_texts(chunks, embeddings)
         return vectorstore.as_retriever(search_kwargs={"k": 5})
     except Exception as e:
-        st.error(f"Error al procesar {nombre_archivo}: {str(e)}")
+        st.error(f"Error al procesar el documento: {str(e)}")
         return None
 
-# 2. Lógica del Chatbot (Versión 2026 estable)
+# 2. Lógica del Chatbot
 if api_key:
     if "retriever" not in st.session_state:
         with st.spinner("Analizando la tesis..."):
@@ -56,9 +57,9 @@ if api_key:
         
         if pregunta:
             try:
+                # Se agregó la importación correcta de ChatGoogleGenerativeAI
                 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
                 
-                # Definimos cómo debe responder la IA
                 template = """Respondé la pregunta basándote solo en el siguiente contexto técnico de la tesis:
                 {context}
                 
@@ -66,7 +67,6 @@ if api_key:
                 """
                 prompt = ChatPromptTemplate.from_template(template)
 
-                # Esta cadena de comandos reemplaza al viejo RetrievalQA que fallaba
                 chain = (
                     {"context": retriever, "question": RunnablePassthrough()}
                     | prompt
@@ -78,6 +78,6 @@ if api_key:
                     respuesta = chain.invoke(pregunta)
                     st.info(respuesta)
             except Exception as e:
-                st.error("Error en la consulta. Verificá la clave en Secrets.")
+                st.error(f"Error en la consulta: {str(e)}")
 else:
-    st.error("Falta GOOGLE_API_KEY en Secrets.")
+    st.error("Falta GOOGLE_API_KEY en Secrets de Streamlit.")
