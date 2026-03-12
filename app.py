@@ -16,7 +16,7 @@ st.markdown("Consultá detalles técnicos sobre el microscopio y el efecto Kerr.
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
 def procesar_documento():
-    nombre_archivo = "tesis-romano (1).pdf"
+    nombre_archivo = "Tesis-Mauricio.pdf"
     try:
         pdf_reader = PyPDF2.PdfReader(nombre_archivo)
         text = ""
