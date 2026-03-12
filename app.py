@@ -38,9 +38,9 @@ def procesar_documento():
         
         # Usamos el modelo estable embedding-001
         embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/text-embedding-004", # O "models/embedding-001"
+    model="models/embedding-001", 
     google_api_key=api_key,
-    task_type="retrieval_document" # Añadir esto ayuda a la API a identificar la tarea
+    client_options={"api_version": "v1"} # Esto fuerza la versión estable
 )
         vectorstore = FAISS.from_texts(chunks, embeddings)
         return vectorstore.as_retriever(search_kwargs={"k": 5})
