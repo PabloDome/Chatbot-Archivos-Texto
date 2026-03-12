@@ -2,10 +2,6 @@ import streamlit as st
 import google.generativeai as genai
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.runnables import RunnablePassthrough
-from langchain_core.output_parsers import StrOutputParser
 from langchain_core.embeddings import Embeddings
 import os
 import time
@@ -16,50 +12,38 @@ st.title("🔬 Asistente Virtual: Tesis de Mauricio Romano")
 
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
-# Clase de Embeddings optimizada para tu cuenta
 class GoogleDirectEmbeddings(Embeddings):
     def __init__(self, api_key):
         genai.configure(api_key=api_key)
-
     def embed_documents(self, texts):
         embeddings = []
-        progreso = st.progress(0, text="Indexando contenido científico...")
+        progreso = st.progress(0, text="Indexando contenido...")
         for i, t in enumerate(texts):
             try:
-                res = genai.embed_content(
-                    model="models/gemini-embedding-001",
-                    content=t,
-                    task_type="retrieval_document"
-                )
+                res = genai.embed_content(model="models/gemini-embedding-001", content=t, task_type="retrieval_document")
                 embeddings.append(res["embedding"])
-                time.sleep(1.5) 
+                time.sleep(1.2)
                 progreso.progress((i + 1) / len(texts))
             except Exception:
-                time.sleep(10)
+                time.sleep(5)
                 res = genai.embed_content(model="models/gemini-embedding-001", content=t, task_type="retrieval_document")
                 embeddings.append(res["embedding"])
         progreso.empty()
         return embeddings
-    
     def embed_query(self, text):
-        res = genai.embed_content(
-            model="models/gemini-embedding-001",
-            content=text,
-            task_type="retrieval_query"
-        )
-        return res["embedding"]
+        return genai.embed_content(model="models/gemini-embedding-001", content=text, task_type="retrieval_query")["embedding"]
 
 def procesar_texto(ruta_archivo):
     try:
         with open(ruta_archivo, "r", encoding="utf-8") as f:
             text = f.read()
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=2500, chunk_overlap=250)
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=200)
         chunks = text_splitter.split_text(text)
-        embeddings_model = GoogleDirectEmbeddings(api_key=api_key)
-        vectorstore = FAISS.from_texts(chunks, embeddings_model)
+        model_emb = GoogleDirectEmbeddings(api_key=api_key)
+        vectorstore = FAISS.from_texts(chunks, model_emb)
         return vectorstore.as_retriever(search_kwargs={"k": 3})
     except Exception as e:
-        st.error(f"Error al procesar: {str(e)}")
+        st.error(f"Error: {str(e)}")
         return None
 
 # 2. Lógica de Chat
@@ -67,46 +51,32 @@ if api_key:
     archivo_txt = "tesis_mauricio.txt"
     if "retriever" not in st.session_state:
         if os.path.exists(archivo_txt):
-            with st.spinner("Cargando conocimientos..."):
+            with st.spinner("Cargando tesis..."):
                 st.session_state.retriever = procesar_texto(archivo_txt)
         else:
-            st.error(f"No se encontró '{archivo_txt}'")
+            st.error("Falta tesis_mauricio.txt")
 
     if st.session_state.get("retriever"):
-        pregunta = st.text_input("Realizá tu consulta técnica:")
+        pregunta = st.text_input("Consultá sobre el microscopio o la dinámica de paredes:")
         if pregunta:
             try:
-                # CAMBIO CLAVE: Forzamos el uso de la versión v1 de la API para evitar el 404
-                llm = ChatGoogleGenerativeAI(
-                    model="gemini-1.5-flash", 
-                    google_api_key=api_key,
-                    temperature=0.2
-                )
+                # Búsqueda de fragmentos relevantes
+                docs = st.session_state.retriever.get_relevant_documents(pregunta)
+                contexto = "\n\n".join([doc.page_content for doc in docs])
                 
-                prompt = ChatPromptTemplate.from_template("""
-                Eres un experto en física. Responde basándote en la tesis provista.
-                Contexto: {context}
-                Pregunta: {question}
-                Respuesta:""")
-
-                chain = (
-                    {"context": st.session_state.retriever, "question": RunnablePassthrough()}
-                    | prompt | llm | StrOutputParser()
-                )
+                # LLAMADA DIRECTA A GEMINI (Evita el error 404 de LangChain)
+                genai.configure(api_key=api_key)
+                model = genai.GenerativeModel('gemini-1.5-flash')
                 
-                with st.spinner("Buscando respuesta..."):
-                    st.info(chain.invoke(pregunta))
+                prompt = f"""Responde como un experto en física experimental basándote solo en este contexto:
+                {contexto}
+                
+                Pregunta: {pregunta}"""
+                
+                with st.spinner("Generando respuesta técnica..."):
+                    response = model.generate_content(prompt)
+                    st.info(response.text)
             except Exception as e:
-                # Si sigue dando error de versión, intentamos con el nombre alternativo
-                st.warning("Reintentando con configuración de respaldo...")
-                try:
-                    llm_alt = ChatGoogleGenerativeAI(
-                        model="models/gemini-1.5-flash", # Nombre completo con prefijo
-                        google_api_key=api_key
-                    )
-                    chain_alt = ({"context": st.session_state.retriever, "question": RunnablePassthrough()} | prompt | llm_alt | StrOutputParser())
-                    st.info(chain_alt.invoke(pregunta))
-                except Exception as e2:
-                    st.error(f"Error persistente de API: {str(e2)}")
+                st.error(f"Error en la comunicación directa: {str(e)}")
 else:
     st.error("Configurá la GOOGLE_API_KEY.")
