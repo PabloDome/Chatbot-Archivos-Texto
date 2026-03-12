@@ -1,5 +1,4 @@
 import streamlit as st
-import PyPDF2
 import google.generativeai as genai
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
@@ -8,20 +7,21 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 import os
-import time 
+import time
 
 # 1. Configuración de la interfaz
 st.set_page_config(page_title="Asistente de Tesis - M. E. Romano", page_icon="🔬")
 st.title("🔬 Asistente Virtual: Tesis de Mauricio Romano")
+st.markdown("Consulta técnica optimizada mediante archivo de texto plano.")
 
 api_key = st.secrets.get("GOOGLE_API_KEY")
 
-def procesar_pdf(pdf_file):
+def procesar_texto(ruta_archivo):
     try:
-        pdf_reader = PyPDF2.PdfReader(pdf_file)
-        text = "".join([page.extract_text() or "" for page in pdf_reader.pages])
+        with open(ruta_archivo, "r", encoding="utf-8") as f:
+            text = f.read()
         
-        # Chunks grandes para hacer menos llamadas a la API
+        # Al ser texto plano, podemos usar fragmentos más grandes (más contexto, menos llamadas)
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=3000, chunk_overlap=300)
         chunks = text_splitter.split_text(text)
         
@@ -30,66 +30,65 @@ def procesar_pdf(pdf_file):
         class GoogleDirectEmbeddings:
             def embed_documents(self, texts):
                 embeddings = []
-                progreso = st.progress(0, text="Procesando fragmentos (respetando cuota)...")
+                progreso = st.progress(0, text="Indexando contenido técnico...")
                 for i, t in enumerate(texts):
-                    # Pausa de 1.5 segundos para evitar el error 429 de Google
                     try:
+                        # Pausa de 1.5s para respetar el límite de 100 RPM de la API gratuita
                         res = genai.embed_content(
-                            model="models/gemini-embedding-001", 
-                            content=t, 
+                            model="models/gemini-embedding-001",
+                            content=t,
                             task_type="retrieval_document"
                         )
                         embeddings.append(res["embedding"])
-                        time.sleep(1.5) 
+                        time.sleep(1.5)
                         progreso.progress((i + 1) / len(texts))
-                    except Exception as e:
-                        st.warning(f"Pausa técnica por límite de cuota... reintentando fragmento {i+1}")
-                        time.sleep(10) # Espera larga si hay error
+                    except Exception:
+                        st.warning(f"Límite de cuota alcanzado. Reintentando fragmento {i+1}...")
+                        time.sleep(10)
                         res = genai.embed_content(model="models/gemini-embedding-001", content=t, task_type="retrieval_document")
                         embeddings.append(res["embedding"])
                 progreso.empty()
                 return embeddings
-                
+            
             def embed_query(self, text):
                 return genai.embed_content(
-                    model="models/gemini-embedding-001", 
-                    content=text, 
+                    model="models/gemini-embedding-001",
+                    content=text,
                     task_type="retrieval_query"
                 )["embedding"]
 
         vectorstore = FAISS.from_texts(chunks, GoogleDirectEmbeddings())
         return vectorstore.as_retriever(search_kwargs={"k": 4})
-    
     except Exception as e:
-        st.error(f"No se pudo procesar el PDF: {str(e)}")
+        st.error(f"Error al procesar el archivo de texto: {str(e)}")
         return None
 
 # 2. Lógica de ejecución
 if api_key:
-    archivo_pdf = "tesis_mauricio.pdf"
+    archivo_txt = "tesis_mauricio.txt"
     
     if "retriever" not in st.session_state:
-        if os.path.exists(archivo_pdf):
-            with st.spinner("Analizando la tesis..."):
-                resultado = procesar_pdf(archivo_pdf)
-                if resultado:
-                    st.session_state.retriever = resultado
-                    st.success("Tesis cargada correctamente.")
+        if os.path.exists(archivo_txt):
+            with st.spinner("Cargando base de conocimientos desde TXT..."):
+                st.session_state.retriever = procesar_texto(archivo_txt)
         else:
-            st.warning("Subí el PDF para comenzar:")
-            u_file = st.file_uploader("Archivo PDF", type="pdf")
-            if u_file:
-                st.session_state.retriever = procesar_pdf(u_file)
+            st.error(f"❌ No se encontró el archivo '{archivo_txt}' en el repositorio.")
+            st.info("Asegúrate de haber subido el archivo de texto que generamos anteriormente.")
 
     if "retriever" in st.session_state and st.session_state.retriever:
-        preg = st.text_input("Hacé tu pregunta técnica:")
+        preg = st.text_input("Realizá una consulta sobre el microscopio o la dinámica de paredes:")
         if preg:
             try:
                 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
-                prompt = ChatPromptTemplate.from_template("Responde según la tesis: {context}\n\nPregunta: {question}")
-                chain = ({"context": st.session_state.retriever, "question": RunnablePassthrough()} | prompt | llm | StrOutputParser())
+                prompt = ChatPromptTemplate.from_template(
+                    "Eres un asistente experto en física. Responde basándote en la tesis: {context}\n\nPregunta: {question}"
+                )
+                chain = (
+                    {"context": st.session_state.retriever, "question": RunnablePassthrough()}
+                    | prompt | llm | StrOutputParser()
+                )
                 st.info(chain.invoke(preg))
             except Exception as e:
                 st.error(f"Error en la consulta: {str(e)}")
 else:
-    st.error("Configurá la GOOGLE_API_KEY en Secrets.")
+    st.error("Configurá la GOOGLE_API_KEY en los Secrets de Streamlit.")
