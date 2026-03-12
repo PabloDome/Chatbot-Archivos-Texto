@@ -1,6 +1,7 @@
 import streamlit as st
 import PyPDF2
 import google.generativeai as genai
+import streamlit as st
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -14,6 +15,15 @@ st.set_page_config(page_title="Asistente de Tesis - M. E. Romano", page_icon="�
 st.title("🔬 Asistente Virtual: Tesis de Mauricio Romano")
 
 api_key = st.secrets.get("GOOGLE_API_KEY")
+genai.configure(api_key=api_key)
+
+st.write("### Verificando modelos disponibles:")
+try:
+    for m in genai.list_models():
+        if 'embedContent' in m.supported_generation_methods:
+            st.write(f"✅ Modelo encontrado: {m.name}")
+except Exception as e:
+    st.error(f"❌ Error de permisos o conexión: {str(e)}")
 
 def procesar_pdf(pdf_file):
     try:
